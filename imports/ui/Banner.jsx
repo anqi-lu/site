@@ -1,4 +1,5 @@
-import React, { Component, PropTypes } from 'react';
+import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 import { Constants } from '../api/constants.js'; 
 
 // banner component
@@ -12,7 +13,7 @@ export default class Banner extends Component {
         textAlign: 'right',
       },
       h1: {
-        marginRight: '25px',
+        marginRight: '4%',
         fontWeight: '500',
       },
     };

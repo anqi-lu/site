@@ -1,4 +1,5 @@
-import React, { Component, PropTypes } from 'react';
+import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 import { createContainer } from 'meteor/react-meteor-data';
 
 import Banner from './Banner.jsx'; 
@@ -15,7 +16,8 @@ class App extends Component {
     };
   }
 
-  toggleView(view) {
+  setView(view) {
+    console.log(view);
     this.setState({
       view,
     });
@@ -51,12 +53,26 @@ class App extends Component {
       },
     };
     const style = {
-      split: {
+      proj: {
         float: 'left',
+        marginLeft: '4%',
+        marginRight: '1%',
       },
-      clear: {
+      reas: {
+        float: 'left',
+        marginLeft: '1%',
+        marginRight: '4%',
+      },
+      read: {
         float: 'left',
         clear: 'left',
+        marginLeft: '4%',
+        marginRight: '1%',
+      },
+      prof: {
+        float: 'left',
+        marginLeft: '1%',
+        marginRight: '4%',
       },
       container: {
         height: '90%',
@@ -77,24 +93,36 @@ class App extends Component {
       case Constants.VIEW_HOME: {
         container = (
           <div style={style.container} >
-            <Pane {...config.proj} style={style.split} />
-            <Pane {...config.reas} style={style.split} />
-            <Pane {...config.read} style={style.clear} />
-            <Pane {...config.prof} style={style.split} />
+            <Pane
+              {...config.proj}
+              style={style.proj}
+              onClick={() => this.setView(Constants.VIEW_PROJ)}
+            />
+            <Pane
+              {...config.reas}
+              style={style.reas}
+              onClick={() => this.setView(Constants.VIEW_REAS)}
+            />
+            <Pane
+              {...config.read}
+              style={style.read}
+              onClick={() => this.setView(Constants.VIEW_READ)}
+            />
+            <Pane
+              {...config.prof}
+              style={style.prof} 
+              onClick={() => this.setView(Constants.VIEW_PROF)}
+            />
           </div>
         );
-
         break;
       }
       case Constants.VIEW_REAS: {
         break;
       }
-
       case Constants.VIEW_PROJ:
-
         break;
       case Constants.VIEW_READ:
-
         break;
       case Constants.VIEW_PROF:
 
