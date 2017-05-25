@@ -1,9 +1,8 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
-import { Constants } from '../api/constants.js'; 
+import Constants from '../api/constants';
 
-// banner component
-// most just name, but will also show more information
+// pane component
 export default class Pane extends Component {
   constructor(props) {
     super(props);
@@ -21,26 +20,89 @@ export default class Pane extends Component {
 
   render() {
     const style = {
-      pane: {
+      pane: this.props.wraps ?
+      {
+        height: '300px',
+        width: '80%',
+        marginLeft: '10%',
+        marginBottom: '20px',
+        minWidth: '400px',
+        position: 'relative',
+      } :
+      {
         width: '45%',
         height: '45%',
-        textAlign: 'center',
-        minHeight: '150px',
+        minHeight: '300px',
         minWidth: '400px',
-        backgroundColor: this.props.color,
         marginTop: '1%',
         marginBottom: '1%',
+        position: 'relative',
+      },
+      filter: {
+        position: 'absolute',
+        top: 0,
+        left: 0,
+        width: '100%',
+        height: '100%',
+        backgroundColor: this.props.color,
+      },
+      inner: {
+        default: {
+          width: '90%',
+          height: '90%',
+          position: 'absolute',
+          left: '5%',
+          top: '5%',
+          textAlign: 'center',
+          display: 'flex',
+          alignItems: 'center',
+          justifyContent: 'center',
+        },
+        hover: {
+          backgroundColor: 'rgba(255,255,255,0.55)',
+          width: '90%',
+          height: '90%',
+          position: 'absolute',
+          left: '5%',
+          top: '5%',
+          display: 'flex',
+          alignItems: 'center',
+          justifyContent: 'center',
+        },
       },
       h2: {
-        fontWeight: '500',
-        color: '#FFF',
-        top: '40%',
-        position: 'relative',
+        hover: {
+          fontWeight: '500',
+          color: '#000',
+        },
+        default: {
+          fontWeight: '500',
+          color: '#FFF',
+        },
       },
     };
 
-    const mergeStyle = Object.assign({}, this.props.style, style.pane);
-    const content = this.state.hover ? <div>hello</div> : <h2 style={style.h2}> {this.props.name} </h2>;
+    const imageStyle = {
+      backgroundImage: 'url(' + this.props.image + ')',
+      backgroundSize: 'cover',
+    };
+
+    // merge style from props for positioning & pane style
+    const mergeStyle = Object.assign({}, this.props.style, style.pane, imageStyle);
+
+    // hover display
+    const content = this.state.hover ?
+    (
+      <div style={style.inner.hover}>
+        <h2 style={style.h2.hover}> {this.props.name} </h2>
+      </div>
+     ) :
+     (
+       <div style={style.inner.default}>
+         <h2 style={style.h2.default}> {this.props.name} </h2>
+       </div>
+     );
+
     return (
       <div
         style={mergeStyle}
@@ -48,7 +110,9 @@ export default class Pane extends Component {
         onMouseEnter={() => this.setHover(true)}
         onMouseLeave={() => this.setHover(false)}
       >
-        {content}
+        <div style={style.filter}>
+          {content}
+        </div>
       </div>
     );
   }
@@ -59,4 +123,6 @@ Pane.propTypes = {
   color: PropTypes.string.isRequired,
   style: PropTypes.object.isRequired,
   onClick: PropTypes.func.isRequired,
+  wraps: PropTypes.bool.isRequired,
+  image: PropTypes.string.isRequired,
 };

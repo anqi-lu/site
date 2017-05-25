@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
-import { Constants } from '../api/constants.js'; 
+import Constants from '../api/constants';
 
 // banner component
 // most just name, but will also show more information
@@ -16,20 +16,45 @@ export default class Banner extends Component {
         marginRight: '4%',
         fontWeight: '500',
       },
+      img: {
+        float: 'left',
+      },
     };
 
     // TODO: add logic to switch banner to include view information
     // TODO: add transition for banner between views
 
-    return (
+    const bannerJSX = this.props.view === Constants.VIEW_HOME ? (
       <div style={style.banner}>
         <h1 style={style.h1}> {this.props.name} </h1>
       </div>
+    ) : (
+      <div style={style.banner}>
+        <span style={style.img}>
+          <button className="arrow left" onClick={this.props.backFunc}>
+            <svg width="80%" height="30px">
+              <polyline
+                fill="none"
+                stroke="#898989"
+                strokeWidth="1"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                points="10,30 0.375,15 10,0.375 "
+              />
+              <line x1="0" y1="15" x2="300" y2="15" stroke="#898989" strokeWidth="1" markerEnd="url(#arrowhead)" />
+            </svg>
+          </button>
+        </span>
+        <h1 style={style.h1}> {this.props.name} </h1>
+      </div>
     );
+
+    return bannerJSX;
   }
 }
 
 Banner.propTypes = {
   name: PropTypes.string.isRequired,
   view: PropTypes.string.isRequired,
+  backFunc: PropTypes.func.isRequired,
 };
