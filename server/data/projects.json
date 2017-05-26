@@ -1,0 +1,33 @@
+[
+    {
+        "name": "playground",
+        "tools": [
+            {
+                "tool": "Javascript",
+                "icon" : "javascript.png"
+            },
+            {
+                "tool": "React",
+                "icon" : "react.png"
+            }],
+        "description": "ITS AWESOME, IMHO",
+        "link": "http://playground.vision",
+    },
+    {
+        "name": "Jane",
+        "tools": ["Javascript", "Python", "Keras", "Twilio", "OpenWeather"],
+        "description": "It says HELLO",
+        "link": ""
+    },
+    {
+        "name": "Character Trajectories",
+        "tools": ["Python", "Keras", "MatLab"],
+        "description": "Using a wide range of machine learning techniques, focusing on RNNs, GRUs, and LSTMs, implemented models to classify characters given the velocities of touch on a tablet. Also, predicted the next time step's velocities, generating smooth drawings. Utilized Matlab and Keras.",
+        "link": "https://docs.google.com/presentation/d/1pN5UUsrDJHjLpsrR1bzuj-iF15362KIytOYET0lNDf0/edit?usp=sharing"
+    },
+    {
+        "name": "Analyzing Breast Cancer Data",
+        "tools": ["Python", "sklearn", "numpy"],
+        "description": "Investigated the Breast Cancer dataset in the UCR repository to classify patients' cancers as malignant or benign. Achieved over 98% accuracy using Boostrapped Logistic Regression. Models were implemented using Python and SkLearn."
+    }
+]

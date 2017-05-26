@@ -22,16 +22,24 @@ export default class Entry extends Component {
     let content;
     switch (this.props.view) {
       case Constants.VIEW_PROJ:
+        const tools = this.props.entry.tools.map((tool) => {
+          const addr = 'icons/' + tool.icon;
+          console.log(addr);
+          return <img src={addr} key={new Date()} />;
+        });
         content =
           <div>
-            A Project Entry
-            <div> {this.props.entry.text} </div>
+            <h3> {this.props.entry.name} </h3>
+            <div> {this.props.entry.description} </div>
+              {tools}
+            <hr />
           </div>;
+          
         break;
       case Constants.VIEW_RESE:
         content =
           <div>
-            A Research Entry
+            <div> {this.props.entry.text} </div>
           </div>;
         break;
       default:

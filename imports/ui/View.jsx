@@ -44,15 +44,16 @@ export default class View extends Component {
         width: '80%',
         height: '100%',
       },
+      content: {
+        marginRight: '4%',
+      },
     };
 
     let content;
     switch (this.props.view) {
       case Constants.VIEW_PROJ:
-        content = this.renderCollection();
-        break;
       default:
-        // no op
+        content = this.renderCollection();
         break;
     }
     // TODO add side banner
@@ -62,7 +63,9 @@ export default class View extends Component {
           <SideBanner color={this.props.color} image={this.props.image} />  
         </div>
         <div style={style.right}>
-          {content}
+          <div style={style.content}>
+            {content}
+          </div>
         </div>
       </div>
     );

@@ -57,3 +57,10 @@ svg {
 polyline, line {
   transition: all 100ms ease-in-out;
 }
+
+hr { 
+  border: 1 solid black;
+  margin-right: 15%;
+  margin-left: 15%;
+  margin-top: 15px;
+}
