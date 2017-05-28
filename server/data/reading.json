@@ -1,14 +1,12 @@
 [
     {
-        "name": "playground",
-        "tools": ["Javascript", "React"],
-        "description": "ITS AWESOME, IMHO",
-        "link": "http://playground.vision"
+        "name": "East of Eden",
+        "author": "Steinbeck",
+        "category": "read"
     },
     {
-        "name": "Jane",
-        "tools": ["Javascript", "Python", "Keras", "Twilio", "OpenWeather"],
-        "description": "It says HELLO",
-        "link": ""
-    }
+        "name": "Grapes of Wrath",
+        "author": "Steinbeck",
+        "category": "read"
+    }    
 ]

@@ -12,7 +12,8 @@
     "prop-types": "^15.5.10",
     "react": "^15.5.4",
     "react-addons-pure-render-mixin": "^15.5.2",
-    "react-dom": "^15.5.4"
+    "react-dom": "^15.5.4",
+    "shortid": "^2.2.8"
   },
   "devDependencies": {
     "babel-plugin-transform-object-rest-spread": "^6.23.0",

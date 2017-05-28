@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
-import Constants from '../api/constants';
 
 // banner component
 // most just name, but will also show more information

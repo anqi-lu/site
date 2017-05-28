@@ -26,7 +26,6 @@ class App extends Component {
   }
 
   componentDidMount() {
-    console.log(Projects);
     window.addEventListener('resize',
     () => {
       const pageWidth = window.innerWidth;

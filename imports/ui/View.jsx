@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import Constants from '../api/constants';
+import shortid from 'shortid';
 
 import SideBanner from './SideBanner.jsx';
 import Entry from './Entry.jsx';
@@ -22,8 +23,8 @@ export default class View extends Component {
   }
 
   renderCollection() {
-    return this.props.collection.map((entry) => (
-      <Entry key={entry._id} entry={entry} view={this.props.view} />
+    return this.props.collection.map(entry => (
+      <Entry key={shortid.generate()} entry={entry} view={this.props.view} />
     ));
   }
 

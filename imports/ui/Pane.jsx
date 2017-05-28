@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
-import Constants from '../api/constants';
+
+import BlurUp from './BlurUp.jsx';
 
 // pane component
 export default class Pane extends Component {
@@ -28,8 +29,7 @@ export default class Pane extends Component {
         marginBottom: '20px',
         minWidth: '400px',
         position: 'relative',
-      } :
-      {
+      } : {
         width: '45%',
         height: '45%',
         minHeight: '300px',
@@ -82,13 +82,15 @@ export default class Pane extends Component {
       },
     };
 
-    const imageStyle = {
-      backgroundImage: 'url(' + this.props.image + ')',
-      backgroundSize: 'cover',
-    };
+    // const imageStyle = {
+    //   backgroundImage: 'url(' + this.props.image + ')',
+    //   backgroundSize: 'cover',
+    // };
+
+    const imageStyle = Object.assign({ backgroundSize: 'cover' });
 
     // merge style from props for positioning & pane style
-    const mergeStyle = Object.assign({}, this.props.style, style.pane, imageStyle);
+    const mergeStyle = Object.assign({}, this.props.style, style.pane); //, imageStyle
 
     // hover display
     const content = this.state.hover ?
@@ -96,20 +98,26 @@ export default class Pane extends Component {
       <div style={style.inner.hover}>
         <h2 style={style.h2.hover}> {this.props.name} </h2>
       </div>
-     ) :
-     (
-       <div style={style.inner.default}>
-         <h2 style={style.h2.default}> {this.props.name} </h2>
-       </div>
-     );
+    ) : (
+      <div style={style.inner.default}>
+        <h2 style={style.h2.default}> {this.props.name} </h2>
+      </div>
+    );
 
     return (
+
       <div
         style={mergeStyle}
         onClick={this.props.onClick}
         onMouseEnter={() => this.setHover(true)}
         onMouseLeave={() => this.setHover(false)}
       >
+        <BlurUp
+          placeholderURL={`images/place_reas.jpg`}
+          url={this.props.image}
+          aspectRatio="6:4"
+          style={imageStyle}
+        />
         <div style={style.filter}>
           {content}
         </div>

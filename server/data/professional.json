@@ -1,14 +1,23 @@
 [
     {
-        "name": "playground",
-        "tools": ["Javascript", "React"],
-        "description": "ITS AWESOME, IMHO",
-        "link": "http://playground.vision"
+        "name": "Software Engineering Intern",
+        "company": "Google",
+        "date": ["May 2017", "Aug 2017"],
+        "icon": "google.png",
+        "description": ""
     },
     {
-        "name": "Jane",
-        "tools": ["Javascript", "Python", "Keras", "Twilio", "OpenWeather"],
-        "description": "It says HELLO",
-        "link": ""
+        "name": "Software Engineering Intern",
+        "company": "Silicon Labs",
+        "date": ["May 2016", "Aug 2016"],
+        "icon": "siliconLabs.png",
+        "description": "Built a fuzz-testing engine to test the security of the Thread protocol stack using Java. Developed internal plugin to test cache-performance of a micro-chip using C."
+    },
+    {
+        "name": "Software Engineering Intern",
+        "company": "Imagitas",
+        "date": ["May 2015", "Aug 2015"],
+        "icon": "imagitas.jpg",
+        "description": "Developed, maintained, and enhanced build and deployment scripts using python, perl and git. Enhanced automatic testing of source code by writing selenium tests using a robot framework."
     }
 ]

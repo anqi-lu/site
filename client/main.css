@@ -64,3 +64,67 @@ hr {
   margin-left: 15%;
   margin-top: 15px;
 }
+
+/** blur up **/
+/* http://alistapart.com/article/now-you-see-me */
+.blur-up__hidden {
+    position: absolute;
+    visibility: hidden;
+}
+
+.blur-up__blur {
+    filter: blur(15px);
+}
+
+.blur-up__animation {
+    transition: all .3s ease;
+    transition-property: opacity, visibility;
+
+    visibility: visible;
+    opacity: 1;
+}
+
+.blur-up__animation--fade-out {
+    visibility: hidden;
+    opacity: 0;
+}
+
+/* http://tachyons.io/components/layout/horizontal-aspect-ratios/index.html */
+.blur-up__aspect-ratio {
+    position: relative;
+    overflow: hidden;
+}
+
+.blur-up__aspect-ratio--16x9 {
+    padding-bottom: 56.25%;
+}
+
+.blur-up__aspect-ratio--4x3 {
+    padding-bottom: 75%;
+}
+
+.blur-up__aspect-ratio--6x4 {
+    padding-bottom: 66.6%;
+}
+
+.blur-up__aspect-ratio--8x5 {
+    padding-bottom: 62.5%;
+}
+
+.blur-up__aspect-ratio--7x5 {
+    padding-bottom: 71.42%;
+}
+
+.blur-up__aspect-ratio--1x1 {
+    padding-bottom: 100%;
+}
+
+.blur-up__aspect-ratio--object {
+    position: absolute;
+
+    /* Preserve aspet ratio */
+    min-width: 100%;
+    min-height: 100%;
+    /*background-color: rgba(9, 163, 236, 0.3);
+    background-blend-mode: multiply;*/
+}
