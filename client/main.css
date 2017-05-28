@@ -4,6 +4,13 @@ body {
   background-color: #FFF;
 
   position: absolute;
+
+  height: 100%;
+  width: 100%;
+
+  overflow: auto!important;
+  max-height: 100% !important;
+
   top: 0;
   bottom: 0;
   left: 0;
@@ -15,6 +22,7 @@ body {
 
 #render-target {
     height: 100%;
+    width: 100%;
     top: 0;
     bottom: 0;
     left: 0;
@@ -69,7 +77,7 @@ hr {
 /* http://alistapart.com/article/now-you-see-me */
 .blur-up__hidden {
     position: absolute;
-    visibility: hidden;
+    display: none;
 }
 
 .blur-up__blur {

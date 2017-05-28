@@ -48,22 +48,22 @@ class App extends Component {
       proj: {
         color: 'rgba(159, 74, 90, 0.35)',
         name: 'projects',
-        image: 'images/proj.jpg',
+        image: 'proj.jpg',
       },
       reas: {
         color: 'rgba(60, 166, 139, 0.35)',
         name: 'research',
-        image: 'images/reas.jpg',
+        image: 'reas.jpg',
       },
       read: {
         color: 'rgba(251, 181, 66, 0.35)',
         name: 'reading',
-        image: 'images/read.jpg',
+        image: 'read.jpg',
       },
       prof: {
         color: 'rgba(176, 95, 109, 0.35)',
         name: 'professional',
-        image: 'images/prof.jpg',
+        image: 'prof.jpg',
       },
     };
     const style = {

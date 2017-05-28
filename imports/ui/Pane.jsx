@@ -113,8 +113,8 @@ export default class Pane extends Component {
         onMouseLeave={() => this.setHover(false)}
       >
         <BlurUp
-          placeholderURL={`images/place_reas.jpg`}
-          url={this.props.image}
+          placeholderURL={`images/place_${this.props.image}`}
+          url={`images/${this.props.image}`}
           aspectRatio="6:4"
           style={imageStyle}
         />

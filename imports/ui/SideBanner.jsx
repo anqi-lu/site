@@ -8,7 +8,7 @@ export default class SideBanner extends Component {
   render() {
     const style = {
       image: {
-        backgroundImage: 'url(' + this.props.image + ')',
+        backgroundImage: `url(images/${this.props.image})`,
         backgroundSize: 'cover',
         position: 'relative',
         width: '80%',
