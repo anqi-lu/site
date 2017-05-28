@@ -113,7 +113,7 @@ class App extends Component {
         // get width of page
 
         pageContent = (
-          <div>
+          <div style={{ height: '100%', width: '100%' }} >
             <Pane
               {...config.proj}
               style={style.proj}

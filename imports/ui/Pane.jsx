@@ -87,7 +87,7 @@ export default class Pane extends Component {
     //   backgroundSize: 'cover',
     // };
 
-    const imageStyle = Object.assign({ backgroundSize: 'cover' });
+    const imageStyle = Object.assign({ backgroundSize: 'cover' }, { height: '100%', width: '100%' });
 
     // merge style from props for positioning & pane style
     const mergeStyle = Object.assign({}, this.props.style, style.pane); //, imageStyle

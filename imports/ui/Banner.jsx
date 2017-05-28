@@ -11,13 +11,17 @@ export default class Banner extends Component {
       banner: {
         width: '100%',
         textAlign: 'right',
+        height: '10%',
       },
       h1: {
         marginRight: '4%',
         fontWeight: '500',
+        marginTop: '0',
+        paddingTop: '15px',
       },
       img: {
         float: 'left',
+        paddingTop: '15px',
       },
     };
 
