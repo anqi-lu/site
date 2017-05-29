@@ -4,7 +4,15 @@
         "tools": [
             {
                 "tool": "c++",
-                "icon": "cppicon.html"
+                "icon": "cpp.png"
+            },
+            {
+                "tool": "CMAKE",
+                "icon": "cmake.png"
+            },
+            {
+                "tool": "Boost",
+                "icon": "boost.png"
             }
         ],
         "description": "Theoretically novel and performant system that allows users to use a generalized dynammic timewarping with any distance function. Distance function can be implemented by extending an interface and implementing the disance in a manner as directed in the paper.",
@@ -20,7 +28,7 @@
         "tools": [
             {
                 "tool": "c++",
-                "icon": "cppicon.html"
+                "icon": "cpp.png"
             },
             {
                 "tool": "Javascript",
@@ -32,7 +40,7 @@
             },
             {
                 "tool": "Boost",
-                "icon" : ""
+                "icon" : "boost.png"
             },
             {
                 "tool": "React",
@@ -40,7 +48,7 @@
             },
             {
                 "tool": "D3",
-                "icon" : ""
+                "icon" : "d3.svg"
             }
         ],
         "description": "Web platform allowing for the interactive exploration of time series similarity. Allows users to explore connections betweens sequences using dynammic time warping and visually displaying the results.",

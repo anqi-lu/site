@@ -72,12 +72,12 @@
                 "icon": "Python.png"
             }, 
             {
-                "tool": "sklearn.png",
-                "icon": "sklearn"
+                "tool": "sklearn",
+                "icon": "sklearn.png"
             }, 
             {
-                "tool": "numpy.png",
-                "icon": "numpy"
+                "tool": "scipy",
+                "icon": "scipy.png"
             } 
             ],
         "description": "Investigated the Breast Cancer dataset in the UCR repository to classify patients' cancers as malignant or benign. Achieved over 98% accuracy using Boostrapped Logistic Regression. Models were implemented using Python and SkLearn."

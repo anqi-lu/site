@@ -81,11 +81,11 @@ hr {
 }
 
 .blur-up__blur {
-    filter: blur(15px);
+    filter: blur(1px);
 }
 
 .blur-up__animation {
-    transition: all .3s ease;
+    transition: all .7s ease;
     transition-property: opacity, visibility;
 
     visibility: visible;

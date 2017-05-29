@@ -36,11 +36,12 @@ export default class Entry extends Component {
     const tools = this.props.entry.tools ? this.props.entry.tools.map((tool) => {
       const addr = `icons/${tool.icon}`;
       return (
+        tool.icon ?
         <img 
-          src={addr} 
+          src={addr}
           key={shortid.generate()}
           style={{ height: '25px', width: '25px' }}
-        />
+        /> : null
       );
     }) : null;
 
