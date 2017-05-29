@@ -81,5 +81,28 @@
             } 
             ],
         "description": "Investigated the Breast Cancer dataset in the UCR repository to classify patients' cancers as malignant or benign. Achieved over 98% accuracy using Boostrapped Logistic Regression. Models were implemented using Python and SkLearn."
+    },
+    {
+        "name": "site",
+        "tools": [
+            {
+                "tool": "Javascript",
+                "icon" : "javascript.png"
+            },
+            {
+                "tool": "React",
+                "icon" : "react.png"
+            },
+            {
+                "tool": "Meteor",
+                "icon" : "meteor.png"
+            },
+            {
+                "tool": "MongoDB",
+                "icon" : "mongo.svg"
+            }
+        ],
+        "description": "This website! This is a collaboration to build a reactive and clean personal website that is easily extensible.",
+        "link": "https://cjlovering/site"
     }
 ]
