@@ -23,8 +23,16 @@ export default class View extends Component {
   }
 
   renderCollection() {
-    return this.props.collection.map(entry => (
-      <Entry key={shortid.generate()} entry={entry} view={this.props.view} />
+    const LIGHT = '#FFF';
+    const DARK = '#f3f3f3';
+    return this.props.collection.map((entry, i) => (
+      <Entry
+        key={shortid.generate()}
+        entry={entry}
+        view={this.props.view}
+        backgroundColor={(i % 2 === 0) ? LIGHT : DARK}
+        color={this.props.color}
+      />
     ));
   }
 

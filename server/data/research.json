@@ -15,16 +15,44 @@
                 "icon": "boost.png"
             }
         ],
-        "description": "Theoretically novel and performant system that allows users to use a generalized dynammic timewarping with any distance function. Distance function can be implemented by extending an interface and implementing the disance in a manner as directed in the paper.",
+        "description": "System for fast and accurate time series similarity searches. Utilizes a theoretically novel and performant system that allows users to use a generalized dynammic timewarping with any distance function. Distance function can be implemented by extending an interface and implementing the disance in a manner as directed in the paper.",
         "status": "In Progress.",
         "citation": "",
         "link": {
-            "code": "http://github.com/cjlovering/genex.git",
+            "code": "http://github.com/cjlovering/genex",
             "paper": ""
         }
     },
     {
-        "name": "Insight",
+        "name": "gdtw",
+        "tools": [
+            {
+                "tool": "c++",
+                "icon": "cpp.png"
+            },
+            {
+                "tool": "CMAKE",
+                "icon": "cmake.png"
+            },
+            {
+                "tool": "Boost",
+                "icon": "boost.png"
+            },
+            {
+                "tool": "MatLab",
+                "icon": "matlab.png"
+            }
+        ],
+        "description": "Theoretically novel and performant system that allows users to use a generalized dynammic timewarping with any distance function. Distance function can be implemented by extending an interface and implementing the disance in a manner as directed in the paper.",
+        "status": "Under Review.",
+        "citation": "",
+        "link": {
+            "code": "http://github.com/ctring/GDTW.git",
+            "paper": ""
+        }
+    },
+    {
+        "name": "Interactive Time Series Analytics Powered by ONEX",
         "tools": [
             {
                 "tool": "c++",
@@ -52,11 +80,11 @@
             }
         ],
         "description": "Web platform allowing for the interactive exploration of time series similarity. Allows users to explore connections betweens sequences using dynammic time warping and visually displaying the results.",
-        "status": "Accepted. ACMSigmod Demonstration 2017.",
-        "citation": "",
+        "status": "SIGMOD '17- Proceedings of the 2017 ACM International Conference on Management of Data",
+        "citation": "http://dl.acm.org/citation.cfm?id=3058729&CFID=768471185&CFTOKEN=33366380",
         "link": {
             "code": "http://github.com/cjlovering/genex.git",
-            "paper": ""
+            "paper": "http://delivery.acm.org/10.1145/3060000/3058729/p1595-neamtu.pdf?ip=198.91.116.182&id=3058729&acc=OPENTOC&key=4D4702B0C3E38B35%2E4D4702B0C3E38B35%2E4D4702B0C3E38B35%2E9F04A3A78F7D3B8D&CFID=768471185&CFTOKEN=33366380&__acm__=1496120602_3c8d1609adc57f1a95d46adc98219da2"
         }
     },
     {

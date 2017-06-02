@@ -8,5 +8,35 @@
         "name": "Grapes of Wrath",
         "author": "Steinbeck",
         "category": "read"
-    }    
+    },
+    {
+        "name": "Heart of Darkness",
+        "author": "Joseph Conrad",
+        "category": "read"
+    },
+    {
+        "name": "The Prince",
+        "author": "Machiavelli",
+        "category": "read"
+    },
+    {
+        "name": "Treasure Island",
+        "author": "Robert Louis Stevenson",
+        "category": "read"
+    },
+    {
+        "name": "Robinson Crusoe",
+        "author": "Daniel Defoe",
+        "category": "read"
+    },
+    {
+        "name": "Great Expectations",
+        "author": "Charles Dickens",
+        "category": "read"
+    },
+    {
+        "name": "Grapes of Wrath",
+        "author": "Steinbeck",
+        "category": "read"
+    }
 ]

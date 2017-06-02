@@ -32,12 +32,13 @@ export default class Entry extends Component {
         textAlign: 'center',
       },
     };
+
     let content;
-    const tools = this.props.entry.tools ? this.props.entry.tools.map((tool) => {
+    const tools = this.props.entry.tools ? this.props.entry.tools.map((tool, i) => {
       const addr = `icons/${tool.icon}`;
       return (
         tool.icon ?
-        <img 
+        <img
           src={addr}
           key={shortid.generate()}
           style={{ height: '25px', width: '25px' }}
@@ -76,6 +77,18 @@ export default class Entry extends Component {
           </div>
         );
         break;
+      case Constants.VIEW_READ:
+        content = (
+          <div>
+            <span style={{ float: 'left' }}>
+              <h3 style={style.leftH}> {this.props.entry.name} </h3>
+            </span>
+            <h5 style={{ textAlign: 'right', marginRight: '5px' }}>
+              - {this.props.entry.author}
+            </h5>
+          </div>
+        );
+        break;
       case Constants.VIEW_PROF:
         const title = `${this.props.entry.name} - ${this.props.entry.company}`;
         const dates = `${this.props.entry.date[0]} - ${this.props.entry.date[1]}`;
@@ -99,7 +112,16 @@ export default class Entry extends Component {
     }
 
     return (
-      <div>
+      <div 
+        style={{
+          backgroundColor: this.state.hover ? this.props.color : this.props.backgroundColor,
+          paddingTop: '1px',
+          paddingBottom: '5px',
+          paddingLeft: '2px',
+        }}
+        onMouseEnter={() => this.setState({ hover: true })}
+        onMouseLeave={() => this.setState({ hover: false })}
+      >
         {content}
       </div>
     );
@@ -109,4 +131,6 @@ export default class Entry extends Component {
 Entry.propTypes = {
   view: PropTypes.string.isRequired,
   entry: PropTypes.object.isRequired,
+  backgroundColor: PropTypes.string.isRequired,
+  color: PropTypes.string.isRequired,
 };
