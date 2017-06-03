@@ -12,7 +12,7 @@ export default class SideBanner extends Component {
         backgroundSize: 'cover',
         position: 'relative',
         width: '80%',
-        height: '90%',
+        height: '95%',
         marginLeft: '10%',
       },
       filter: {

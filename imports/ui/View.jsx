@@ -51,7 +51,8 @@ export default class View extends Component {
       right: {
         float: 'left',
         width: '80%',
-        height: '100%',
+        height: '95%',
+        overflowY: 'auto',
       },
       content: {
         marginRight: '4%',
