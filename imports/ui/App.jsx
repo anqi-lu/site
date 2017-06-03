@@ -78,17 +78,15 @@ class App extends Component {
         left: 0,
         right: 0,
       },
-      link: {
-        link: '#FFF',
-        vlink: '#FFF',
-      },
     };
     let pageContent;
+    const first = LU ? 'anqi-lu' : 'cjlovering';
     const banner = (
       <Banner
         name="charles lovering"
         view={this.state.view}
         backFunc={() => this.setView(Constants.VIEW_HOME)}
+        user={first}
       />
     );
     switch (this.state.view) {
@@ -172,24 +170,10 @@ class App extends Component {
       </div>
     );
 
-    const first = LU ? 'anqi-lu' : 'cjlovering';
-    // const second = !LU ? 'anqi-lu' : 'cjlovering';
-
-    const footer = this.state.view === Constants.VIEW_HOME ? (
-      <div style={{ textAlign: 'center', fontSize: '2em' }}>
-        <span>
-          <a href={`https://github.com/${first}`} style={style.link} ><i className="fa fa-github" /></a>
-          <span> </span>
-          <a href={`https://linkedin.com/in/${first}`} style={style.link} ><i className="fa fa-linkedin" /></a>
-        </span>
-      </div>
-    ) : null;
-
     return (
       <div style={style.main}>
         {banner}
         {container}
-        {footer}
       </div>
     );
   }

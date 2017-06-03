@@ -105,7 +105,6 @@ export default class Pane extends Component {
     );
 
     return (
-
       <div
         style={mergeStyle}
         onClick={this.props.onClick}

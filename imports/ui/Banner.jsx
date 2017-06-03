@@ -23,13 +23,27 @@ export default class Banner extends Component {
         float: 'left',
         paddingTop: '15px',
       },
+      link: {
+        color: 'inherit',
+        textDecoration: 'none',
+      },
     };
 
-    // TODO: add logic to switch banner to include view information
-    // TODO: add transition for banner between views
+    const icons = (
+      <div style={{ textAlign: 'center', color: 'black' }}>
+        <span>
+          <a href={`https://github.com/${this.props.user}`} style={style.link} ><i className="fa fa-github fa-lg" /></a>
+          <span> </span>
+          <a href={`https://linkedin.com/in/${this.props.user}`} style={style.link} ><i className="fa fa-linkedin fa-lg" /></a>
+        </span>
+      </div>
+    );
 
     const bannerJSX = this.props.view === Constants.VIEW_HOME ? (
       <div style={style.banner}>
+        <span style={Object.assign({}, style.img, { marginLeft: '4%', paddingTop: '25px' })}>
+          {icons}
+        </span>
         <h1 style={style.h1}> {this.props.name} </h1>
       </div>
     ) : (
@@ -59,6 +73,7 @@ export default class Banner extends Component {
 
 Banner.propTypes = {
   name: PropTypes.string.isRequired,
+  user: PropTypes.string.isRequired,
   view: PropTypes.string.isRequired,
   backFunc: PropTypes.func.isRequired,
 };

@@ -66,6 +66,18 @@ export default class Entry extends Component {
         );
         break;
       case Constants.VIEW_RESE:
+        const link = { color: 'green' };
+        const code = this.props.entry.link.code.length > 0 ?
+          (<a href={this.props.entry.link.paper} style={link}>code</a>) : null;
+        const paper = this.props.entry.link.paper.length > 0 ?
+          (<span> | <a href={this.props.entry.link.paper} style={link}>paper</a> </span>) : null;
+
+        const links = (
+          <div>
+            {code} {paper}
+          </div>
+        );
+
         const statusRight = `    -  ${this.props.entry.status}`;
         content = (
           <div>
@@ -79,8 +91,7 @@ export default class Entry extends Component {
             </div>
             <div> {this.props.entry.description} </div>
             <div style={style.links}>
-              <a href={this.props.entry.link.code}>code</a> | 
-              <a href={this.props.entry.link.paper}>paper</a>
+              {links}
             </div>
             {tools}
           </div>
