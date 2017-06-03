@@ -102,28 +102,8 @@ hr {
     overflow: hidden;
 }
 
-.blur-up__aspect-ratio--16x9 {
-    padding-bottom: 56.25%;
-}
-
-.blur-up__aspect-ratio--4x3 {
-    padding-bottom: 75%;
-}
-
 .blur-up__aspect-ratio--6x4 {
     padding-bottom: 66.6%;
-}
-
-.blur-up__aspect-ratio--8x5 {
-    padding-bottom: 62.5%;
-}
-
-.blur-up__aspect-ratio--7x5 {
-    padding-bottom: 71.42%;
-}
-
-.blur-up__aspect-ratio--1x1 {
-    padding-bottom: 100%;
 }
 
 .blur-up__aspect-ratio--object {

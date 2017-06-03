@@ -79,8 +79,8 @@ export default class Entry extends Component {
             </div>
             <div> {this.props.entry.description} </div>
             <div style={style.links}>
-              <a href={this.props.entry.link.code}> code </a> |
-              <a href={this.props.entry.link.paper}> paper </a>
+              <a href={this.props.entry.link.code}>code</a> | 
+              <a href={this.props.entry.link.paper}>paper</a>
             </div>
             {tools}
           </div>

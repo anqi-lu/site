@@ -77,12 +77,7 @@ BlurUp.propTypes = {
   url: PropTypes.string.isRequired,
   placeholderURL: PropTypes.string.isRequired,
   aspectRatio: PropTypes.oneOf([
-    '16:9',
-    '4:3',
     '6:4',
-    '8:5',
-    '7:5',
-    '1:1',
   ]).isRequired,
 };
 

@@ -186,10 +186,6 @@
                 "icon" : "Python.png"
             },
             {
-                "tool": "iptables",
-                "icon" : "iptables.png"
-            },
-            {
                 "tool": "BIND9",
                 "icon" : "bind9.png"
             }
@@ -208,7 +204,7 @@
             },
             {
                 "tool": "Haskell",
-                "icon" : "iptables.png"
+                "icon" : "haskell.png"
             }
         ],
         "date": "May 2016",
