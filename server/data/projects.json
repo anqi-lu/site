@@ -11,6 +11,8 @@
                 "icon" : "react.png"
             }
         ],
+        "date": "June 2016",
+        "category": "personal",
         "description": "Designed a platform for visual displays and data visualizations. Each indivdual display is built on the HTML5 canvas.",
         "link": "http://playground.vision"
     },
@@ -42,11 +44,13 @@
                 "icon": "messenger.png"
             }
         ],
-        "description": "A *life-like* messenger chatbot that can tell you the weather, tell your original stories, call you on your phone, and play games! (Currently private only.)",
+        "date": "January 2017",
+        "category": "personal",
+        "description": "A *life-like* messenger chatbot that can tell you the weather, tell your original stories, call you on your phone, and play games! (Currently private only.) Built as part of WPI's hackathon.",
         "link": ""
     },
     {
-        "name": "Character Trajectories",
+        "name": "Machine Learning: Character Trajectories",
         "tools": [
             {
                 "tool": "Python",
@@ -61,11 +65,12 @@
                 "icon": "matlab.png"
             }
         ],
-        "description": "Using a wide range of machine learning techniques, focusing on RNNs, GRUs, and LSTMs, implemented models to classify characters given the velocities of touch on a tablet. Also, predicted the next time step's velocities, generating smooth drawings. Utilized Matlab and Keras.",
+        "date": "April 2017",
+        "description": "Using a wide range of machine learning techniques, focusing on RNNs, GRUs, and LSTMs, implemented models to classify characters given the velocities of touch on a tablet. Also, predicted the next time step's velocities, generating smooth drawings. Utilized Matlab and Keras. Built for a graduate Machine Learning class.",
         "link": "https://docs.google.com/presentation/d/1pN5UUsrDJHjLpsrR1bzuj-iF15362KIytOYET0lNDf0/edit?usp=sharing"
     },
     {
-        "name": "Analyzing Breast Cancer Data",
+        "name": "Statistical Learning: Analyzing Breast Cancer Data",
         "tools": [
             {
                 "tool": "Python",
@@ -80,6 +85,8 @@
                 "icon": "scipy.png"
             } 
             ],
+        "date": "April 2017",
+        "category": "academic",
         "description": "Investigated the Breast Cancer dataset in the UCR repository to classify patients' cancers as malignant or benign. Achieved over 98% accuracy using Boostrapped Logistic Regression. Models were implemented using Python and SkLearn."
     },
     {
@@ -102,7 +109,146 @@
                 "icon" : "mongo.svg"
             }
         ],
+        "date": "May 2017",
+        "category": "personal",
         "description": "This website! This is a collaboration to build a reactive and clean personal website that is easily extensible.",
         "link": "https://cjlovering/site"
+    },
+    {
+        "name": "Data Mining: Clustering and Graphs",
+        "tools": [
+            {
+                "tool": "Python",
+                "icon" : "Python.png"
+            },
+            {
+                "tool": "scipy",
+                "icon" : "scipy.png"
+            }
+        ],
+        "date": "December 2016",
+        "category": "academic",
+        "description": "Implemented PageRank and Spectral Clustering methods to cluster Yelp social network data.",
+        "link": ""
+    },
+    {
+        "name": "Data Mining: Reinforcement Learning",
+        "tools": [
+            {
+                "tool": "Python",
+                "icon" : "Python.png"
+            },
+            {
+                "tool": "scipy",
+                "icon" : "scipy.png"
+            }
+        ],
+        "date": "December 2016",
+        "category": "academic",
+        "description": "Created a neural network to play Atari PacMan with RL and backpropagation with Python and numpy. Techniques attempted were rather straightforward and training minimal, but there was some signal.",
+        "link": ""
+    },
+    {
+        "name": "Artificial Intelligence: Search",
+        "tools": [
+            {
+                "tool": "Python",
+                "icon" : "Python.png"
+            },
+            {
+                "tool": "Tableau",
+                "icon" : "tableau.png"
+            }
+        ],
+        "date": "September 2016",
+        "category": "academic",
+        "description": "Implemented the Expectation Maximization algorithm for an unknown number of models. Implemented iterative deepening, A*, genetic, and simulated annealing algorithms to solve constrained arithmetic problems. Given a limited number of operators and operands, the target was to reach a certain numbber.",
+        "link": ""
+    },
+    {
+        "name": "Artificial Intelligence: Clustering",
+        "tools": [
+            {
+                "tool": "Python",
+                "icon" : "Python.png"
+            }
+        ],
+        "date": "October 2016",
+        "category": "academic",
+        "description": "Implemented the Expectation Maximization algorithm for an unknown number of models.",
+        "link": ""
+    },
+    {
+        "name": "Network Security: Aminon",
+        "tools": [
+            {
+                "tool": "Python",
+                "icon" : "Python.png"
+            },
+            {
+                "tool": "iptables",
+                "icon" : "iptables.png"
+            },
+            {
+                "tool": "BIND9",
+                "icon" : "bind9.png"
+            }
+        ],
+        "date": "Fall 2016",
+        "category": "academic",
+        "description": "Designed and implemented a lightweight capability gatekeeper utilizing DNS servers built on BIND9, a modified NAT router created with iptables, and used Python to create the asset server and honeypot. Worked collaboratively, and focused on the filtering of users passing through network by modifying packets.",
+        "link": ""
+    },
+    {
+        "name": "Programming Languages",
+        "tools": [
+            {
+                "tool": "Racket",
+                "icon" : "racket.png"
+            },
+            {
+                "tool": "Haskell",
+                "icon" : "iptables.png"
+            }
+        ],
+        "date": "May 2016",
+        "category": "academic",
+        "description": "Built a type-inferencer using a unification algorithm with an occurs check using Racket. Created an object-oriented language with inheritance and a language with lists and exceptions. Using Haskell, explored the usage of lazy functions and implemented LCS with Dynamic Programming.",
+        "link": ""
+    },
+    {
+        "name": "Software Engineering: CapraNav",
+        "tools": [
+            {
+                "tool": "Java",
+                "icon" : "java.png"
+            }
+        ],
+        "date": "Fall 2016",
+        "category": "academic",
+        "description": "Led 9-person team, built backend for a mapping tool to find the way between locations at WPI using Java. Built a polished UI with interactive paths, resizing, a tutorial, and smooth transitions using JavaFX. Teams had 10 people, and were organized to operate in an Agile manner. Won Best Project out of 10 teams.",
+        "link": ""
+    },
+    {
+        "name": "cs231n",
+        "tools": [
+            {
+                "tool": "Python",
+                "icon" : "Python.png"
+            },
+            {
+                "tool": "scipy",
+                "icon" : "scipy.png"
+            },
+            {
+                "tool": "TensorFlow",
+                "icon" : "tf.png"
+            }
+        ],
+        "date": "Winter 2016-2017",
+        "category": "personal",
+        "description": "Worked through online Stanford class cs231n. Manually implemented neural network API that supports variable hidden layers, backpropagation, batch normalization and dropout. Further implemented a similar convolutional network class. Trained a CNN instance with 4 layers to classify the CIFAR-10 dataset.",
+        "link": ""
     }
 ]
+

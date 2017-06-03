@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 import { createContainer } from 'meteor/react-meteor-data';
 
 import { Projects, Research, Reading, Professional } from '../api/collections.js';
+import { LU, config } from '../api/resources.js';
 
 import Banner from './Banner.jsx';
 import Pane from './Pane.jsx';
@@ -44,28 +45,6 @@ class App extends Component {
   }
 
   render() {
-    const config = {
-      proj: {
-        color: 'rgba(159, 74, 90, 0.35)',
-        name: 'projects',
-        image: 'proj.jpg',
-      },
-      reas: {
-        color: 'rgba(60, 166, 139, 0.35)',
-        name: 'research',
-        image: 'reas.jpg',
-      },
-      read: {
-        color: 'rgba(251, 181, 66, 0.35)',
-        name: 'reading',
-        image: 'read.jpg',
-      },
-      prof: {
-        color: 'rgba(176, 95, 109, 0.35)',
-        name: 'professional',
-        image: 'prof.jpg',
-      },
-    };
     const style = {
       proj: {
         float: 'left',
@@ -189,10 +168,21 @@ class App extends Component {
       </div>
     );
 
+    const first = LU ? 'anqi-lu' : 'cjlovering';
+    const second = !LU ? 'anqi-lu' : 'cjlovering';
+    const footer = this.state.view === Constants.VIEW_HOME ? (
+      <div style={{ textAlign: 'center' }}>
+        <span>
+          Developed by <a href={`https://github.com/${first}`}> {first}</a> and <a href={`https://github.com/${second}`}> {second}</a>.
+        </span>
+      </div>
+    ) : null;
+
     return (
       <div style={style.main}>
         {banner}
         {container}
+        {footer}
       </div>
     );
   }

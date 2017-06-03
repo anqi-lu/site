@@ -1,5 +1,41 @@
 [
     {
+        "name": "Interactive Time Series Analytics",
+        "tools": [
+            {
+                "tool": "c++",
+                "icon": "cpp.png"
+            },
+            {
+                "tool": "Javascript",
+                "icon" : "javascript.png"
+            },
+            {
+                "tool": "Python",
+                "icon" : "Python.png"
+            },
+            {
+                "tool": "Boost",
+                "icon" : "boost.png"
+            },
+            {
+                "tool": "React",
+                "icon" : "react.png"
+            },
+            {
+                "tool": "D3",
+                "icon" : "d3.svg"
+            }
+        ],
+        "description": "Web platform allowing for the interactive exploration of time series similarity. Allows users to explore connections betweens sequences using dynammic time warping and visually displaying the results.",
+        "status": "SIGMOD '17- Proceedings of the 2017 ACM...",
+        "citation": "http://dl.acm.org/citation.cfm?id=3058729&CFID=768471185&CFTOKEN=33366380",
+        "link": {
+            "code": "http://github.com/cjlovering/genex.git",
+            "paper": "http://delivery.acm.org/10.1145/3060000/3058729/p1595-neamtu.pdf?ip=198.91.116.182&id=3058729&acc=OPENTOC&key=4D4702B0C3E38B35%2E4D4702B0C3E38B35%2E4D4702B0C3E38B35%2E9F04A3A78F7D3B8D&CFID=768471185&CFTOKEN=33366380&__acm__=1496120602_3c8d1609adc57f1a95d46adc98219da2"
+        }
+    },
+    {
         "name": "genex",
         "tools": [
             {
@@ -52,7 +88,27 @@
         }
     },
     {
-        "name": "Interactive Time Series Analytics Powered by ONEX",
+        "name": "Counting Sea Lion Populations",
+        "tools": [
+            {
+                "tool": "Python",
+                "icon" : "Python.png"
+            },
+            {
+                "tool": "Keras",
+                "icon" : "keras.png"
+            }
+        ],
+        "description": "Saving the declining Steller sea lions in the West- ern Aleutian Islands has been a focus of scien- tists at the NOAA Fisheries Alaska Fisheries Sci- ence Center. In order to understand factors that may be preventing the Steller’s populations from resurging, NOAA collected aerial photographs and counted the different groups within the pop- ulation. As part of a competition hosted by Kag- gle, we developed Deep Learning techniques to automate the process. We experimented with both density counting and object detection ap- proaches, but found little success.",
+        "status": "Academic Class Final Project.",
+        "citation": "",
+        "link": {
+            "code": "https://github.com/benmcmorran/sealions",
+            "paper": "https://github.com/benmcmorran/sealions/paper.pdf"
+        }
+    },
+    {
+        "name": "Insight: Time Series Analytics",
         "tools": [
             {
                 "tool": "c++",
@@ -79,32 +135,12 @@
                 "icon" : "d3.svg"
             }
         ],
-        "description": "Web platform allowing for the interactive exploration of time series similarity. Allows users to explore connections betweens sequences using dynammic time warping and visually displaying the results.",
-        "status": "SIGMOD '17- Proceedings of the 2017 ACM International Conference on Management of Data",
-        "citation": "http://dl.acm.org/citation.cfm?id=3058729&CFID=768471185&CFTOKEN=33366380",
-        "link": {
-            "code": "http://github.com/cjlovering/genex.git",
-            "paper": "http://delivery.acm.org/10.1145/3060000/3058729/p1595-neamtu.pdf?ip=198.91.116.182&id=3058729&acc=OPENTOC&key=4D4702B0C3E38B35%2E4D4702B0C3E38B35%2E4D4702B0C3E38B35%2E9F04A3A78F7D3B8D&CFID=768471185&CFTOKEN=33366380&__acm__=1496120602_3c8d1609adc57f1a95d46adc98219da2"
-        }
-    },
-    {
-        "name": "Counting Sea Lion Populations",
-        "tools": [
-            {
-                "tool": "Python",
-                "icon" : "Python.png"
-            },
-            {
-                "tool": "Keras",
-                "icon" : "keras.png"
-            }
-        ],
-        "description": "Saving the declining Steller sea lions in the West- ern Aleutian Islands has been a focus of scien- tists at the NOAA Fisheries Alaska Fisheries Sci- ence Center. In order to understand factors that may be preventing the Steller’s populations from resurging, NOAA collected aerial photographs and counted the different groups within the pop- ulation. As part of a competition hosted by Kag- gle, we developed Deep Learning techniques to automate the process. We experimented with both density counting and object detection ap- proaches, but found little success.",
-        "status": "Academic Class Final Project.",
+        "description": "A precursor to Interactive Time Series Analytics, this was initial work and system building for the web platform allowing for the interactive exploration of time series similarity. Allows users to explore connections betweens sequences using dynammic time warping and visually displaying the results.",
+        "status": "Undergraduate Conference for Research IEEE MIT",
         "citation": "",
         "link": {
-            "code": "https://github.com/benmcmorran/sealions",
-            "paper": "https://github.com/benmcmorran/sealions/paper.pdf"
+            "code": "http://github.com/ctring/ONEX.git",
+            "paper": ""
         }
-    }   
+    }
 ]

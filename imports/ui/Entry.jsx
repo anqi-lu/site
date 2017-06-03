@@ -31,20 +31,29 @@ export default class Entry extends Component {
         marginBottom: '10px',
         textAlign: 'center',
       },
+      tools: {
+        textAlign: 'center',
+      },
     };
 
     let content;
-    const tools = this.props.entry.tools ? this.props.entry.tools.map((tool, i) => {
+    const toolIcons = this.props.entry.tools ? this.props.entry.tools.map((tool, i) => {
       const addr = `icons/${tool.icon}`;
       return (
         tool.icon ?
         <img
           src={addr}
           key={shortid.generate()}
+          alt={tool.tool}
           style={{ height: '25px', width: '25px' }}
         /> : null
       );
     }) : null;
+    const tools = toolIcons ? (
+      <div style={style.tools}>
+        {toolIcons}
+      </div>
+    ) : null;
 
     switch (this.props.view) {
       case Constants.VIEW_PROJ:
@@ -81,7 +90,7 @@ export default class Entry extends Component {
         content = (
           <div>
             <span style={{ float: 'left' }}>
-              <h3 style={style.leftH}> {this.props.entry.name} </h3>
+              <h5 style={style.leftH}> {this.props.entry.name} </h5>
             </span>
             <h5 style={{ textAlign: 'right', marginRight: '5px' }}>
               - {this.props.entry.author}
@@ -102,7 +111,7 @@ export default class Entry extends Component {
               <h5 style={{ textAlign: 'right' }}> {dates} </h5>
             </div>
             <div> {this.props.entry.description} </div>
-            <img src={addr} style={{ height: '75px', width: '75px' }} />
+            <img src={addr} alt="decorative" style={{ height: '75px', width: '75px', paddingLeft: '45%' }} />
           </div>
         );
         break;

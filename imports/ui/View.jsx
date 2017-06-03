@@ -22,15 +22,15 @@ export default class View extends Component {
     });
   }
 
-  renderCollection() {
+  renderCollection(collection) {
     const LIGHT = '#FFF';
     const DARK = '#f3f3f3';
-    return this.props.collection.map((entry, i) => (
+    return collection.map((entry, i) => (
       <Entry
         key={shortid.generate()}
         entry={entry}
         view={this.props.view}
-        backgroundColor={(i % 2 === 0) ? LIGHT : DARK}
+        backgroundColor={(i % 2 === 1) ? LIGHT : DARK}
         color={this.props.color}
       />
     ));
@@ -61,8 +61,25 @@ export default class View extends Component {
     let content;
     switch (this.props.view) {
       case Constants.VIEW_PROJ:
+        const personal = this.renderCollection(this.props.collection.filter(entry =>
+          (entry.category === 'personal'),
+        ));
+        const academic = this.renderCollection(this.props.collection.filter(entry =>
+          !(entry.category === 'personal'),
+        ));
+        content = (
+          <div>
+            <div>
+              <h2> Personal </h2>
+              {personal}
+              <h2> Academic </h2>
+              {academic}
+            </div>
+          </div>
+        );
+        break;
       default:
-        content = this.renderCollection();
+        content = this.renderCollection(this.props.collection);
         break;
     }
     // TODO add side banner

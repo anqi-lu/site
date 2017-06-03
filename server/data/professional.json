@@ -7,6 +7,13 @@
         "description": ""
     },
     {
+        "name": "Teaching Assistant (Undergraduate)",
+        "company": "Worcester Polytechnic Institute",
+        "date": ["September 2016", "May 2017"],
+        "icon": "wpi.png",
+        "description": "2905 - Data Analysis for Game Development\n 2011 - Assembly and Machine Organization\n2020 - Discrete Mathematics\n2011 - Assembly and Machine Organization\n2303 - Systems Programming\n2301 - Systems Programming Non-Major\n1101 - Introduction to CS: Functional Programming"
+    },
+    {
         "name": "Software Engineering Intern",
         "company": "Silicon Labs",
         "date": ["May 2016", "Aug 2016"],

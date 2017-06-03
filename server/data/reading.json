@@ -35,8 +35,53 @@
         "category": "read"
     },
     {
-        "name": "Grapes of Wrath",
-        "author": "Steinbeck",
+        "name": "The Bluest Eye",
+        "author": "Toni Morrison",
+        "category": "read"
+    },
+    {
+        "name": "The Count of Monte Cristo",
+        "author": "Dumas",
+        "category": "read"
+    },
+    {
+        "name": "A Farewell to Arms",
+        "author": "Ernest Hemingway",
+        "category": "read"
+    },
+    {
+        "name": "The Sun Also Raises",
+        "author": "Ernest Hemingway",
+        "category": "read"
+    },
+    {
+        "name": "The Good Earth",
+        "author": "Pearl S. Buck",
+        "category": "read"
+    },
+    {
+        "name": "Candide",
+        "author": "Voltaire",
+        "category": "read"
+    },
+    {
+        "name": "The Invisible Man",
+        "author": "Ralph Ellison",
+        "category": "read"
+    },
+    {
+        "name": "Animal Farm",
+        "author": "George Orwell",
+        "category": "read"
+    },
+    {
+        "name": "The Secret Life of Kids",
+        "author": "Sue Monk Kidd",
+        "category": "read"
+    },
+    {
+        "name": "Sherlock Holmes",
+        "author": "Arthur Conan Doyle",
         "category": "read"
     }
 ]
