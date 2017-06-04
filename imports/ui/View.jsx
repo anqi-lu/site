@@ -93,20 +93,20 @@ export default class View extends Component {
           (entry.category === 'read'),
         ));
         const paper = this.renderCollection(this.props.collection.filter(entry =>
-          !(entry.category === 'paper'),
+          (entry.category === 'paper'),
         ));
-        const future = this.renderCollection(this.props.collection.filter(entry =>
-          !(entry.category === 'future'),
+        const next = this.renderCollection(this.props.collection.filter(entry =>
+          (entry.category === 'next'),
         ));
 
         content = (
           <div>
             <h3> Papers </h3>
-            Recent papers that I found intriguing.
+            Papers that I found intriguing.
             {paper}
             <h3> Next </h3>
             Books that I plan on reading.
-            {future}
+            {next}
             <h3> Read </h3>
             Some of the books I read, and found at least pretty good.
             {read}
