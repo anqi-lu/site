@@ -83,5 +83,177 @@
         "name": "Sherlock Holmes",
         "author": "Arthur Conan Doyle",
         "category": "read"
+    },
+    {
+        "name": "Wuthering Heights",
+        "author": "Emily Brontë",
+        "category": "read"
+    },
+    {
+        "name": "The Pugilist at Rest",
+        "author": "Thom Jones",
+        "category": "read"
+    },
+    {
+        "name": "The Cat’s Cradle",
+        "author": "Kurt Vonnegut",
+        "category": "read"
+    },
+    {
+        "name": "All The Pretty Horses",
+        "author": "Cormac McCarthy",
+        "category": "read"
+    },
+    {
+        "name": "The Road",
+        "author": "Cormac McCarthy",
+        "category": "read"
+    },
+    {
+        "name": "The Crossing",
+        "author": "Cormac McCarthy",
+        "category": "read"
+    },
+    {
+        "name": "The Yiddish Policemen's Union",
+        "author": "Michael Chabon",
+        "category": "read"
+    },
+    {
+        "name": "The Devil in the White City",
+        "author": "Erik Larson",
+        "category": "read"
+    },
+    {
+        "name": "The Last Samurai",
+        "author": "Helen DeWitt",
+        "category": "read"
+    },
+    {
+        "name": "The Devil in the White City",
+        "author": "Helen DeWitt",
+        "category": "read"
+    },
+    {
+        "name": "The Gentleman of the Road",
+        "author": "Michael Chabon",
+        "category": "read"
+    },
+    {
+        "name": "Fight Club",
+        "author": "Chuck Palahniuk",
+        "category": "read"
+    },
+    {
+        "name": "Night Watch",
+        "author": "‎Sergei Lukyanenko",
+        "category": "read"
+    },
+    {
+        "name": "Day Watch",
+        "author": "‎Sergei Lukyanenko",
+        "category": "read"
+    },
+    {
+        "name": "Twilight Watch",
+        "author": "‎Sergei Lukyanenko",
+        "category": "read"
+    },
+    {
+        "name": "Last Watch",
+        "author": "‎Sergei Lukyanenko",
+        "category": "read"
+    },
+    {
+        "name": "New Watch",
+        "author": "‎Sergei Lukyanenko",
+        "category": "read"
+    },
+    {
+        "name": "The Hobbit",
+        "author": "J.R.R Tolkien",
+        "category": "read"
+    },
+    {
+        "name": "The Fellowship of the Ring",
+        "author": "J.R.R Tolkien",
+        "category": "read"
+    },
+    {
+        "name": "The Two Towers",
+        "author": "J.R.R Tolkien",
+        "category": "read"
+    },
+    {
+        "name": "Return of the King",
+        "author": "J.R.R Tolkien",
+        "category": "read"
+    },
+    {
+        "name": "Children of Hurin",
+        "author": "J.R.R Tolkien",
+        "category": "read"
+    },
+    {
+        "name": "Life of Pi",
+        "author": "Yann Martel",
+        "category": "read"
+    },
+    {
+        "name": "The Great Gatsby",
+        "author": "F. Scott Fitzgerald",
+        "category": "read"
+    },
+    {
+        "name": "The Great Gatsby",
+        "author": "F. Scott Fitzgerald",
+        "category": "read"
+    },
+    {
+        "name": "StackGAN: Text to Photo-realistic Image Synthesis with Stacked Generative Adversarial Networks",
+        "link": "https://arxiv.org/abs/1612.03242",
+        "category": "paper"
+    },
+    {
+        "name": "Generative Adversarial Text to Image Synthesis",
+        "link": "https://arxiv.org/abs/1605.05396",
+        "category": "paper"
+    },
+    {
+        "name": "Generative Adversarial Networks",
+        "link": "https://arxiv.org/abs/1406.2661",
+        "category": "paper"
+    },
+    {
+        "name": "Faster R-CNN: Towards Real-Time Object Detection with Region Proposal Networks",
+        "link": "https://arxiv.org/abs/1506.01497",
+        "category": "paper"
+    },
+    {
+        "name": "Fast R-CNN",
+        "link": "https://arxiv.org/abs/1504.08083",
+        "category": "paper"
+    },
+    {
+        "name": "Mask R-CNN",
+        "link": "https://arxiv.org/abs/1703.06870",
+        "category": "paper"
+    },
+
+    
+    {
+        "name": "The Collected Works of Abraham Lincoln",
+        "author": "",
+        "category": "next"
+    },
+    {
+        "name": "Parting the Waters: America in the King Years ",
+        "author": "Taylor Branch",
+        "category": "next"
+    },
+    {
+        "name": "The Life and Times of an America",
+        "author": "Richard S. Tedlow",
+        "category": "next"
     }
 ]
