@@ -79,6 +79,31 @@ export default class View extends Component {
           </div>
         );
         break;
+      case Constants.VIEW_READ:
+        const read = this.renderCollection(this.props.collection.filter(entry =>
+          (entry.category === 'read'),
+        ));
+        const paper = this.renderCollection(this.props.collection.filter(entry =>
+          !(entry.category === 'paper'),
+        ));
+        const future = this.renderCollection(this.props.collection.filter(entry =>
+          !(entry.category === 'future'),
+        ));
+
+        content = (
+          <div>
+            <h3> Papers </h3>
+            Recent papers that I found intriguing.
+            {paper}
+            <h3> Next </h3>
+            Books that I plan on reading.
+            {future}
+            <h3> Read </h3>
+            Some of the books I read, and found at least pretty good.
+            {read}
+          </div>
+        )
+
       default:
         content = this.renderCollection(this.props.collection);
         break;
