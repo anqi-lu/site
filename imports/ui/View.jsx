@@ -62,12 +62,7 @@ export default class View extends Component {
     let content;
     switch (this.props.view) {
       case Constants.VIEW_PROF:
-        const personal = this.renderCollection(this.props.collection.filter(entry =>
-          (entry.category === 'personal'),
-        ));
-        const academic = this.renderCollection(this.props.collection.filter(entry =>
-          !(entry.category === 'personal'),
-        ));
+        const jobs = this.renderCollection(this.props.collection.filter);
         content = (
           <div>
             <h3> Employment </h3>
