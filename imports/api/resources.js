@@ -6,9 +6,6 @@ let langs;
 let interests;
 let name;
 
-console.log('resources');
-console.log(LU);
-
 if (LU) {
   name = 'Anqi Lu - 安奇路';
   config = {
