@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import { createContainer } from 'meteor/react-meteor-data';
 
-import { Projects, Research, Reading, Professional } from '../api/collections.js';
+import { First, Second, Third, Fourth } from '../api/collections.js';
 import { LU, config, tools, langs, interests, name } from '../api/resources.js';
 
 import Banner from './Banner.jsx';
@@ -199,9 +199,9 @@ App.propTypes = {
 
 export default createContainer(() => {
   return {
-    projects: Projects.find({}).fetch(),
-    research: Research.find({}).fetch(),
-    reading: Reading.find({}).fetch(),
-    professional: Professional.find({}).fetch(),
+    projects: First.find({}).fetch(),
+    research: Second.find({}).fetch(),
+    reading: Third.find({}).fetch(),
+    professional: Fourth.find({}).fetch(),
   };
 }, App);
