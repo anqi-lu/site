@@ -26,7 +26,6 @@ export default class View extends Component {
     const itemStyle = {
       width: '200px',
       display: 'inline-block',
-      padding: '3px',
       margin: '3px',
       textAlign: 'right',
       height: '65px',
@@ -44,7 +43,7 @@ export default class View extends Component {
           <img
             src={addr}
             alt={item.tool}
-            style={{ height: '45px', width: '45px', marginRight: '25px', marginTop: '10px' }}
+            style={{ height: '45px', width: '45px', marginRight: '25px', marginTop: '5px' }}
           />
         </div>
       );
