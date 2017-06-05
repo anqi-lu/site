@@ -22,6 +22,32 @@ export default class View extends Component {
     });
   }
 
+  renderItems(items) {
+    const itemStyle = {
+      width: '150px',
+      display: 'inline-block',
+      padding: '5px',
+      margin: '5px',
+    };
+    return items.map((item) => {
+      const addr = `icons/${item.icon}`;
+      return (
+        <div style={itemStyle} key={shortid.generate()}>
+          <span style={{ float: 'left' }}>
+            <h5>
+              {item.tool}
+            </h5>
+          </span>
+          <img
+            src={addr}
+            alt={item.tool}
+            style={{ height: '25px', width: '25px' }}
+          />
+        </div>
+      );
+    });
+  }
+
   renderCollection(collection) {
     const LIGHT = '#FFF';
     const DARK = '#f3f3f3';
@@ -62,9 +88,104 @@ export default class View extends Component {
     let content;
     switch (this.props.view) {
       case Constants.VIEW_PROF:
+        const knownLangs = [
+          {
+            tool: 'c++',
+            icon: 'cpp.png',
+          },
+          {
+            tool: 'Java',
+            icon: 'java.png',
+          },
+          {
+            tool: 'Javascript',
+            icon: 'javascript.png',
+          },
+          {
+            tool: 'Python',
+            icon: 'Python.png',
+          },
+          {
+            tool: 'MatLab',
+            icon: 'matlab.png',
+          },
+          {
+            tool: 'C',
+            icon: 'c.png',
+          },
+          {
+            tool: 'Racket',
+            icon: 'racket.png',
+          },
+          {
+            tool: 'Haskell',
+            icon: 'haskell.png',
+          },
+        ];
+        const knownTools = [
+          {
+            tool: 'Boost',
+            icon: 'boost.png',
+          },
+          {
+            tool: 'React',
+            icon: 'react.png',
+          },
+          {
+            tool: 'D3',
+            icon: 'd3.svg',
+          },
+          {
+            tool: 'Keras',
+            icon: 'keras.png',
+          },
+          {
+            tool: 'TensorFLow',
+            icon: 'tf.png',
+          },
+          {
+            tool: 'Meteor',
+            icon: 'meteor.png',
+          },
+          {
+            tool: 'MongoDB',
+            icon: 'mongo.svg',
+          },
+          {
+            tool: 'sklearn',
+            icon: 'sklearn.png',
+          },
+          {
+            tool: 'scipy',
+            icon: 'scipy.png',
+          },
+          {
+            tool: 'BIND9',
+            icon: 'bind9.png',
+          },
+        ];
+        const langs = this.renderItems(knownLangs);
+        const tools = this.renderItems(knownTools);
         const jobs = this.renderCollection(this.props.collection);
         content = (
           <div>
+            <h3> Interests </h3>
+            <p> 
+              I am currently interested in theory and applications of deep learning.
+              I am also interested in machine learning, distributed and cloud computing.
+              I also would like to learn more about security and programming language
+              fundamentals (design/compilers).
+            </p>
+
+            <h3> Skills </h3>
+            <div>
+              <h4> Languages </h4>
+              {langs}
+            </div>
+            <div>
+              <h4> Tools </h4>
+              {tools}
+            </div>
             <h3> Employment </h3>
             {jobs}
           </div>
@@ -113,7 +234,7 @@ export default class View extends Component {
             <p> {paper} </p>
 
             <h3> Technical </h3>
-            Technical material that are pretty good .
+            Technical material that are pretty good.
             <p> {technical} </p>
 
             <h3> Read </h3>

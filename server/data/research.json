@@ -32,7 +32,7 @@
         "citation": "http://dl.acm.org/citation.cfm?id=3058729&CFID=768471185&CFTOKEN=33366380",
         "link": {
             "code": "http://github.com/cjlovering/genex.git",
-            "paper": "http://delivery.acm.org/10.1145/3060000/3058729/p1595-neamtu.pdf?ip=198.91.116.182&id=3058729&acc=OPENTOC&key=4D4702B0C3E38B35%2E4D4702B0C3E38B35%2E4D4702B0C3E38B35%2E9F04A3A78F7D3B8D&CFID=768471185&CFTOKEN=33366380&__acm__=1496120602_3c8d1609adc57f1a95d46adc98219da2"
+            "paper": "http://dl.acm.org/citation.cfm?id=3058729&CFID=768471185&CFTOKEN=33366380"
         }
     },
     {
@@ -79,7 +79,7 @@
                 "icon": "matlab.png"
             }
         ],
-        "description": "Theoretically novel and performant system that allows users to use a generalized dynammic timewarping with any distance function. Distance function can be implemented by extending an interface and implementing the disance in a manner as directed in the paper.",
+        "description": "Theoretically novel system that allows users to use a generalized dynammic timewarping with any distance function. Distance function can be implemented by extending a small class in a manner as directed in the paper.",
         "status": "Under Review.",
         "citation": "",
         "link": {
