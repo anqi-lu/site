@@ -90,95 +90,15 @@ export default class View extends Component {
     let content;
     switch (this.props.view) {
       case Constants.VIEW_PROF:
-        const knownLangs = [
-          {
-            tool: 'c++',
-            icon: 'cpp.png',
-          },
-          {
-            tool: 'Java',
-            icon: 'java.png',
-          },
-          {
-            tool: 'Javascript',
-            icon: 'javascript.png',
-          },
-          {
-            tool: 'Python',
-            icon: 'Python.png',
-          },
-          {
-            tool: 'MatLab',
-            icon: 'matlab.png',
-          },
-          {
-            tool: 'C',
-            icon: 'c.png',
-          },
-          {
-            tool: 'Racket',
-            icon: 'racket.png',
-          },
-          {
-            tool: 'Haskell',
-            icon: 'haskell.png',
-          },
-        ];
-        const knownTools = [
-          {
-            tool: 'Boost',
-            icon: 'boost.png',
-          },
-          {
-            tool: 'React',
-            icon: 'react.png',
-          },
-          {
-            tool: 'D3',
-            icon: 'd3.svg',
-          },
-          {
-            tool: 'Keras',
-            icon: 'keras.png',
-          },
-          {
-            tool: 'TensorFLow',
-            icon: 'tf.png',
-          },
-          {
-            tool: 'Meteor',
-            icon: 'meteor.png',
-          },
-          {
-            tool: 'MongoDB',
-            icon: 'mongo.svg',
-          },
-          {
-            tool: 'sklearn',
-            icon: 'sklearn.png',
-          },
-          {
-            tool: 'scipy',
-            icon: 'scipy.png',
-          },
-          {
-            tool: 'BIND9',
-            icon: 'bind9.png',
-          },
-        ];
-        const langs = this.renderItems(knownLangs);
-        const tools = this.renderItems(knownTools);
+        const langs = this.renderItems(this.props.langs);
+        const tools = this.renderItems(this.props.tools);
         const jobs = this.renderCollection(this.props.collection);
         content = (
           <div>
             <h3> Interests </h3>
-            <p> 
-              I am currently interested in theory and applications of deep learning.
-              I am also interested in machine learning, distributed and cloud computing.
-              I also would like to learn more about security and programming language
-              fundamentals (design/compilers).
+            <p>
+              {this.props.interests}
             </p>
-
             <h3> Skills </h3>
             <div>
               <h4> Languages </h4>
@@ -270,4 +190,7 @@ View.propTypes = {
   color: PropTypes.string.isRequired,
   image: PropTypes.string.isRequired,
   collection: PropTypes.array.isRequired,
+  tools: PropTypes.array.isRequired,
+  langs: PropTypes.array.isRequired,
+  interests: PropTypes.string.isRequired,
 };

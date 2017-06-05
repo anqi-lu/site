@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import { createContainer } from 'meteor/react-meteor-data';
 
 import { Projects, Research, Reading, Professional } from '../api/collections.js';
-import { LU, config } from '../api/resources.js';
+import { LU, config, tools, langs, interests } from '../api/resources.js';
 
 import Banner from './Banner.jsx';
 import Pane from './Pane.jsx';
@@ -92,7 +92,6 @@ class App extends Component {
     switch (this.state.view) {
       case Constants.VIEW_HOME: {
         // get width of page
-
         pageContent = (
           <div style={{ height: '100%', width: '100%' }} >
             <Pane
@@ -128,6 +127,9 @@ class App extends Component {
           <View
             view={this.state.view}
             collection={this.props.projects}
+            tools={tools}
+            langs={langs}
+            interests={interests}
             {...config.proj}
           />
         );
@@ -137,6 +139,9 @@ class App extends Component {
           <View
             view={this.state.view}
             collection={this.props.research}
+            tools={tools}
+            langs={langs}
+            interests={interests}
             {...config.reas}
           />
         );
@@ -146,6 +151,9 @@ class App extends Component {
           <View
             view={this.state.view}
             collection={this.props.reading}
+            tools={tools}
+            langs={langs}
+            interests={interests}
             {...config.read}
           />
         );
@@ -155,6 +163,9 @@ class App extends Component {
           <View
             view={this.state.view}
             collection={this.props.professional}
+            tools={tools}
+            langs={langs}
+            interests={interests}
             {...config.prof}
           />
         );
