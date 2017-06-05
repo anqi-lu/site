@@ -45,7 +45,6 @@ class App extends Component {
   }
 
   render() {
-    console.log(this.props.projects);
     const style = {
       proj: {
         float: 'left',
