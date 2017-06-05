@@ -29,12 +29,13 @@ export default class View extends Component {
       padding: '1px',
       margin: '1px',
       textAlign: 'right',
+      backgroundColor: '#f3f3f3',
     };
     return items.map((item) => {
       const addr = `icons/${item.icon}`;
       return (
         <div style={itemStyle} key={shortid.generate()}>
-          <span style={{ float: 'left' }}>
+          <span style={{ float: 'left', marginLeft: '25px' }}>
             <h5>
               {item.tool}
             </h5>
@@ -42,7 +43,7 @@ export default class View extends Component {
           <img
             src={addr}
             alt={item.tool}
-            style={{ height: '45px', width: '45px' }}
+            style={{ height: '45px', width: '45px', marginRight: '25px' }}
           />
         </div>
       );
