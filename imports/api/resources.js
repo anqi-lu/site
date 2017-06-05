@@ -180,10 +180,9 @@ if (LU) {
       icon: 'bind9.png',
     },
   ];
-  interests = `I am currently interested in theory and applications of deep learning.
-  I am also interested in machine learning, distributed and cloud computing.
-  I also would like to learn more about security and programming language
-  fundamentals (design/compilers).`;
+  interests = `I am currently interested in the theory and applications of deep learning.
+  I am also interested in machine learning, distributed computing and cloud computing.
+  I would like to learn more about network and system security`;
 }
 
 export { LU, config, tools, langs, interests, name };
