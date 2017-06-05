@@ -24,10 +24,11 @@ export default class View extends Component {
 
   renderItems(items) {
     const itemStyle = {
-      width: '150px',
+      width: '200px',
       display: 'inline-block',
-      padding: '5px',
-      margin: '5px',
+      padding: '1px',
+      margin: '1px',
+      textAlign: 'right',
     };
     return items.map((item) => {
       const addr = `icons/${item.icon}`;
@@ -41,7 +42,7 @@ export default class View extends Component {
           <img
             src={addr}
             alt={item.tool}
-            style={{ height: '25px', width: '25px' }}
+            style={{ height: '45px', width: '45px' }}
           />
         </div>
       );
