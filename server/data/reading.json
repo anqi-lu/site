@@ -204,11 +204,7 @@
         "author": "F. Scott Fitzgerald",
         "category": "read"
     },
-    {
-        "name": "The Great Gatsby",
-        "author": "F. Scott Fitzgerald",
-        "category": "read"
-    },
+
     {
         "name": "StackGAN: Text to Photo-realistic Image Synthesis with Stacked Generative Adversarial Networks",
         "link": "https://arxiv.org/abs/1612.03242",
@@ -240,7 +236,11 @@
         "category": "paper"
     },
 
-    
+    {
+        "name": "In Dubious Battle",
+        "author": "Steinbeck",
+        "category": "next"
+    },
     {
         "name": "The Collected Works of Abraham Lincoln",
         "author": "",
@@ -255,5 +255,16 @@
         "name": "The Life and Times of an America",
         "author": "Richard S. Tedlow",
         "category": "next"
+    },
+
+    {
+        "name": "The C Programming Language",
+        "author": "Brian Kernighan and Dennis Ritchie",
+        "category": "technical"
+    },
+    {
+        "name": "Functional Programming in Java",
+        "author": "Venkat Subramaniam",
+        "category": "technical"
     }
 ]

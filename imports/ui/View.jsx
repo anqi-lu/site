@@ -98,18 +98,27 @@ export default class View extends Component {
         const next = this.renderCollection(this.props.collection.filter(entry =>
           (entry.category === 'next'),
         ));
+        const technical = this.renderCollection(this.props.collection.filter(entry =>
+          (entry.category === 'technical'),
+        ));
 
         content = (
           <div>
+            <h3> Current </h3>
+            Books that I am plan on reading / reading next.
+            <p> {next} </p>
+
             <h3> Papers </h3>
-            Papers that I found intriguing.
-            {paper}
-            <h3> Next </h3>
-            Books that I plan on reading.
-            {next}
+            Papers that I recently found intriguing.
+            <p> {paper} </p>
+
+            <h3> Technical </h3>
+            Technical material that are pretty good .
+            <p> {technical} </p>
+
             <h3> Read </h3>
-            Some of the books I read, and found at least pretty good.
-            {read}
+            Some of the good books I read.
+            <p> {read} </p>
           </div>
         );
         break;

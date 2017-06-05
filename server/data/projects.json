@@ -162,7 +162,7 @@
         ],
         "date": "September 2016",
         "category": "academic",
-        "description": "Implemented the Expectation Maximization algorithm for an unknown number of models. Implemented iterative deepening, A*, genetic, and simulated annealing algorithms to solve constrained arithmetic problems. Given a limited number of operators and operands, the target was to reach a certain numbber.",
+        "description": "Implemented the Expectation Maximization algorithm for an unknown number of models. Implemented iterative deepening, A*, genetic, and simulated annealing algorithms to solve constrained arithmetic problems. Given a limited number of operators and operands, the target was to reach a certain number.",
         "link": ""
     },
     {

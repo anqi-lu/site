@@ -83,7 +83,7 @@ export default class Entry extends Component {
           <div>
             <div>
               <span style={{ float: 'left' }}>
-                <h4 style={style.leftH} > 
+                <h4 style={style.leftH}>
                   {this.props.entry.name}
                 </h4>
               </span>
