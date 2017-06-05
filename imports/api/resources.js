@@ -1,5 +1,4 @@
-
-const LU = true;
+const LU = false;
 let config;
 let tools;
 let langs;
