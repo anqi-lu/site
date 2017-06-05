@@ -1,8 +1,23 @@
 import { Mongo } from 'meteor/mongo';
 
-const Projects = new Mongo.Collection('projects');
-const Research = new Mongo.Collection('research');
-const Reading = new Mongo.Collection('reading');
-const Professional = new Mongo.Collection('professional');
+import LU from './resources.js';
 
-export { Projects, Research, Reading, Professional };
+let First;
+let Second;
+let Third;
+let Fourth;
+
+if (LU) {
+  First = new Mongo.Collection('a_projects');
+  Second = new Mongo.Collection('a_research');
+  Third = new Mongo.Collection('a_reading');
+  Fourth = new Mongo.Collection('a_professional');
+} else {
+  First = new Mongo.Collection('c_projects');
+  Second = new Mongo.Collection('c_research');
+  Third = new Mongo.Collection('c_reading');
+  Fourth = new Mongo.Collection('c_professional');
+}
+
+export { First, Second, Third, Fourth };
+

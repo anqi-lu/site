@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import { createContainer } from 'meteor/react-meteor-data';
 
 import { Projects, Research, Reading, Professional } from '../api/collections.js';
-import { LU, config, tools, langs, interests } from '../api/resources.js';
+import { LU, config, tools, langs, interests, name } from '../api/resources.js';
 
 import Banner from './Banner.jsx';
 import Pane from './Pane.jsx';
@@ -83,7 +83,7 @@ class App extends Component {
     const first = LU ? 'anqi-lu' : 'cjlovering';
     const banner = (
       <Banner
-        name="charles lovering"
+        name={name}
         view={this.state.view}
         backFunc={() => this.setView(Constants.VIEW_HOME)}
         user={first}
