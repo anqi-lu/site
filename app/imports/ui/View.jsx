@@ -32,7 +32,7 @@ export default class View extends Component {
       backgroundColor: '#f3f3f3',
     };
     return items.map((item) => {
-      const addr = `icons/${item.icon}`;
+      const addr = `public/icons/${item.icon}`;
       return (
         <div style={itemStyle} key={shortid.generate()}>
           <span style={{ float: 'left', marginLeft: '25px' }}>
@@ -49,7 +49,6 @@ export default class View extends Component {
       );
     });
   }
-
   renderCollection(collection) {
     const LIGHT = '#FFF';
     const DARK = '#f3f3f3';
@@ -149,19 +148,19 @@ export default class View extends Component {
           <div>
             <h3> Current </h3>
             Books that I am plan on reading / reading next.
-            <p> {next} </p>
+            <div> {next} </div>
 
             <h3> Papers </h3>
             Papers that I recently found intriguing.
-            <p> {paper} </p>
+            <div> {paper} </div>
 
             <h3> Technical </h3>
             Technical material that are pretty good.
-            <p> {technical} </p>
+            <div> {technical} </div>
 
             <h3> Read </h3>
             Some of the good books I read.
-            <p> {read} </p>
+            <div> {read} </div>
           </div>
         );
         break;

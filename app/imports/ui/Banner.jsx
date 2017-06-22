@@ -38,7 +38,6 @@ export default class Banner extends Component {
         </span>
       </div>
     );
-
     const bannerJSX = this.props.view === Constants.VIEW_HOME ? (
       <div style={style.banner}>
         <span style={Object.assign({}, style.img, { marginLeft: '4%', paddingTop: '25px' })}>

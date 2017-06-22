@@ -3,6 +3,8 @@ Collaboration to build a reactive and clean personal website.
 
 ## setup
 
+We *deprecated* meteor from out site!
+
 Install meteor
 
 ```
@@ -62,5 +64,5 @@ heroku config:set MONGO_PASS=<dbPassword>
 git push heroku master
 
 # load data
-./load_data.sh
+./c_deploy.sh
 ```

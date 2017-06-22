@@ -1,8 +1,15 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
-import { createContainer } from 'meteor/react-meteor-data';
 
-import { First, Second, Third, Fourth } from '../api/collections.js';
+import {
+  projects,
+  research,
+  reading,
+  professional,
+} from '../api/data';
+
+// import { createContainer } from '../api/createContainer';
+
 import { LU, config, tools, langs, interests, name } from '../api/resources.js';
 
 import Banner from './Banner.jsx';
@@ -126,7 +133,7 @@ class App extends Component {
         pageContent = (
           <View
             view={this.state.view}
-            collection={this.props.projects}
+            collection={projects}
             tools={tools}
             langs={langs}
             interests={interests}
@@ -138,7 +145,7 @@ class App extends Component {
         pageContent = (
           <View
             view={this.state.view}
-            collection={this.props.research}
+            collection={research}
             tools={tools}
             langs={langs}
             interests={interests}
@@ -150,7 +157,7 @@ class App extends Component {
         pageContent = (
           <View
             view={this.state.view}
-            collection={this.props.reading}
+            collection={reading}
             tools={tools}
             langs={langs}
             interests={interests}
@@ -162,7 +169,7 @@ class App extends Component {
         pageContent = (
           <View
             view={this.state.view}
-            collection={this.props.professional}
+            collection={professional}
             tools={tools}
             langs={langs}
             interests={interests}
@@ -190,18 +197,4 @@ class App extends Component {
   }
 }
 
-App.propTypes = {
-  projects: PropTypes.array.isRequired,
-  research: PropTypes.array.isRequired,
-  reading: PropTypes.array.isRequired,
-  professional: PropTypes.array.isRequired,
-};
-
-export default createContainer(() => {
-  return {
-    projects: First.find({}).fetch(),
-    research: Second.find({}).fetch(),
-    reading: Third.find({}).fetch(),
-    professional: Fourth.find({}).fetch(),
-  };
-}, App);
+export default App;

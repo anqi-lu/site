@@ -4,11 +4,10 @@ import PropTypes from 'prop-types';
 // banner component
 // most just name, but will also show more information
 export default class SideBanner extends Component {
-
   render() {
     const style = {
       image: {
-        backgroundImage: `url(images/${this.props.image})`,
+        backgroundImage: `url(public/images/${this.props.image})`,
         backgroundSize: 'cover',
         position: 'relative',
         width: '80%',

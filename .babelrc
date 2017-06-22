@@ -1,0 +1,8 @@
+{
+  "presets": ["es2015", "react"],
+  "plugins": [
+    ["transform-replace-object-assign", "lodash.assign"],
+    "transform-object-rest-spread", 
+    "transform-class-properties"
+  ]
+}

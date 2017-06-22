@@ -266,5 +266,10 @@
         "name": "Functional Programming in Java",
         "author": "Venkat Subramaniam",
         "category": "technical"
+    },
+    {
+        "name": "Born a Crime",
+        "author": "Trevor Noah",
+        "category": "read"
     }
 ]

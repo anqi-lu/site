@@ -12,12 +12,40 @@ export default class Entry extends Component {
 
     this.state = {
       hover: false,
+      clicked: false,
     };
   }
 
   setHover(hover) {
     this.setState({
       hover,
+    });
+  }
+
+  renderDetailedImages(images) {
+    const itemStyle = {
+      display: 'inline-block',
+      margin: '3px',
+      textAlign: 'right',
+      backgroundColor: '#f3f3f3',
+    };
+    return images.map((item) => {
+      const mergeStyle = Object.assign(itemStyle, { height: item.height, width: item.width });
+      const addr = `public/images/detailed/${item.image}`;
+      return (
+        <div style={mergeStyle} key={shortid.generate()}>
+          {/*<span style={{ float: 'left', marginLeft: '25px' }}>
+            <h5>
+              {item.tool}
+            </h5>
+          </span>*/}
+          <img
+            src={addr}
+            alt={item.image}
+            style={{ height: item.height, width: item.width }}
+          />
+        </div>
+      );
     });
   }
 
@@ -38,7 +66,7 @@ export default class Entry extends Component {
 
     let content;
     const toolIcons = this.props.entry.tools ? this.props.entry.tools.map((tool, i) => {
-      const addr = `icons/${tool.icon}`;
+      const addr = `public/icons/${tool.icon}`;
       return (
         tool.icon ?
         <img
@@ -71,13 +99,13 @@ export default class Entry extends Component {
           (<a href={this.props.entry.link.paper} style={link}>code</a>) : null;
         const paper = this.props.entry.link.paper.length > 0 ?
           (<span> | <a href={this.props.entry.link.paper} style={link}>paper</a> </span>) : null;
-
         const links = (
           <div>
             {code} {paper}
           </div>
         );
-
+        const detailedImages = this.state.hover && this.state.clicked ?
+          this.renderDetailedImages(this.props.entry.detailedImages) : null;
         const statusRight = `    -  ${this.props.entry.status}`;
         content = (
           <div>
@@ -90,6 +118,7 @@ export default class Entry extends Component {
               <h5> {statusRight} </h5>
             </div>
             <div> {this.props.entry.description} </div>
+            {detailedImages}
             <div style={style.links}>
               {links}
             </div>
@@ -112,7 +141,7 @@ export default class Entry extends Component {
       case Constants.VIEW_PROF:
         const title = `${this.props.entry.name} - ${this.props.entry.company}`;
         const dates = `${this.props.entry.date[0]} - ${this.props.entry.date[1]}`;
-        const addr = `icons/${this.props.entry.icon}`;
+        const addr = `public/icons/${this.props.entry.icon}`;
         content = (
           <div>
             <div>
@@ -140,7 +169,8 @@ export default class Entry extends Component {
           paddingLeft: '2px',
         }}
         onMouseEnter={() => this.setState({ hover: true })}
-        onMouseLeave={() => this.setState({ hover: false })}
+        onMouseLeave={() => this.setState({ hover: false, clicked: false })}
+        onClick={() => this.setState({ clicked: (!this.state.clicked) })}
       >
         {content}
       </div>

@@ -181,8 +181,7 @@ if (LU) {
     },
   ];
   interests = `I am currently interested in the theory and applications of deep learning.
-  I am also interested in machine learning, distributed computing and cloud computing.
-  I would like to learn more about network and system security`;
+  I am also interested in machine learning, distributed computing and cloud computing.`;
 }
 
 export { LU, config, tools, langs, interests, name };

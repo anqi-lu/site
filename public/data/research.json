@@ -1,0 +1,168 @@
+[
+    {
+        "name": "Genex",
+        "tools": [
+            {
+                "tool": "c++",
+                "icon": "cpp.png"
+            },
+            {
+                "tool": "CMAKE",
+                "icon": "cmake.png"
+            },
+            {
+                "tool": "Boost",
+                "icon": "boost.png"
+            }
+        ],
+        "detailedImages": [
+        ],
+        "description": "System for fast and accurate time series similarity searches. Utilizes a theoretically novel and performant system that allows users to use a generalized dynammic timewarping with any distance function. Distance function can be implemented by extending an interface and implementing the disance in a manner as directed in the paper.",
+        "status": "In Progress.",
+        "citation": "",
+        "link": {
+            "code": "http://github.com/c2research/genex",
+            "paper": ""
+        }
+    },
+    {
+        "name": "Generalized Dynamic Time Warping",
+        "tools": [
+            {
+                "tool": "c++",
+                "icon": "cpp.png"
+            },
+            {
+                "tool": "CMAKE",
+                "icon": "cmake.png"
+            },
+            {
+                "tool": "Boost",
+                "icon": "boost.png"
+            },
+            {
+                "tool": "MatLab",
+                "icon": "matlab.png"
+            }
+        ],
+        "detailedImages": [
+        ],
+        "description": "Theoretically novel system that allows users to use a generalized dynammic timewarping with any distance function. Distance function can be implemented by extending a small class in a manner as directed in the paper.",
+        "status": "Under Review.",
+        "citation": "",
+        "link": {
+            "code": "http://github.com/c2research/gdtw",
+            "paper": ""
+        }
+    },
+    {
+        "name": "Interactive Time Series Analytics",
+        "tools": [
+            {
+                "tool": "c++",
+                "icon": "cpp.png"
+            },
+            {
+                "tool": "Javascript",
+                "icon" : "javascript.png"
+            },
+            {
+                "tool": "Python",
+                "icon" : "Python.png"
+            },
+            {
+                "tool": "Boost",
+                "icon" : "boost.png"
+            },
+            {
+                "tool": "React",
+                "icon" : "react.png"
+            },
+            {
+                "tool": "D3",
+                "icon" : "d3.svg"
+            }
+        ],
+        "detailedImages": [
+        ],
+        "description": "Web platform allowing for the interactive exploration of time series similarity. Allows users to explore connections betweens sequences using dynammic time warping and visually displaying the results.",
+        "status": "SIGMOD '17- Proceedings of the 2017 ACM...",
+        "citation": "http://dl.acm.org/citation.cfm?id=3058729&CFID=768471185&CFTOKEN=33366380",
+        "link": {
+            "code": "http://github.com/c2research/onex",
+            "paper": "http://dl.acm.org/citation.cfm?id=3058729&CFID=768471185&CFTOKEN=33366380"
+        }
+    },
+    {
+        "name": "Counting Sea Lion Populations",
+        "tools": [
+            {
+                "tool": "Python",
+                "icon" : "Python.png"
+            },
+            {
+                "tool": "Keras",
+                "icon" : "keras.png"
+            }
+        ],
+        "detailedImages": [
+            {
+                "description": "Labeled image.",
+                "image": "works.jpg",
+                "height": 300,
+                "width": 300
+            },
+            {
+                "description": "Labeled image.",
+                "image": "network.png",
+                "height": 164,
+                "width": 450
+            }
+        ],
+        "description": "Saving the declining Steller sea lions in the West- ern Aleutian Islands has been a focus of scientists at the NOAA Fisheries Alaska Fisheries Science Center. In order to understand factors that may be preventing the Steller’s populations from resurging, NOAA collected aerial photographs and counted the different groups within the population. As part of a competition hosted by Kaggle, we developed Deep Learning techniques to automate the process. We experimented with both density counting and object detection approaches, but found little success. Part of the difficulty we had to deal with when approaching this problem was the scale of the data. There was over 100GB, where each image had a dimension of around 4000 by 3000 pixels.",
+        "status": "Academic Class Final Project.",
+        "citation": "",
+        "link": {
+            "code": "https://github.com/benmcmorran/sealions",
+            "paper": "https://github.com/benmcmorran/sealions/blob/master/paper.pdf"
+        }
+    },
+    {
+        "name": "Insight: Time Series Analytics",
+        "tools": [
+            {
+                "tool": "c++",
+                "icon": "cpp.png"
+            },
+            {
+                "tool": "Javascript",
+                "icon" : "javascript.png"
+            },
+            {
+                "tool": "Python",
+                "icon" : "Python.png"
+            },
+            {
+                "tool": "Boost",
+                "icon" : "boost.png"
+            },
+            {
+                "tool": "React",
+                "icon" : "react.png"
+            },
+            {
+                "tool": "D3",
+                "icon" : "d3.svg"
+            }
+        ],
+        "detailedImages": [
+        ],
+        "description": "A precursor to Interactive Time Series Analytics, this was initial work and system building for the web platform allowing for the interactive exploration of time series similarity. Allows users to explore connections betweens sequences using dynammic time warping and visually displaying the results.",
+        "status": "Undergraduate Conference for Research IEEE MIT",
+        "citation": "",
+        "link": {
+            "code": "http://github.com/c2research/onex",
+            "paper": ""
+        }
+    }
+]
