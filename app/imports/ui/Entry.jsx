@@ -96,7 +96,7 @@ export default class Entry extends Component {
       case Constants.VIEW_RESE:
         const link = { color: 'green' };
         const code = this.props.entry.link.code.length > 0 ?
-          (<a href={this.props.entry.link.paper} style={link}>code</a>) : null;
+          (<a href={this.props.entry.link.code} style={link}>code</a>) : null;
         const paper = this.props.entry.link.paper.length > 0 ?
           (<span> | <a href={this.props.entry.link.paper} style={link}>paper</a> </span>) : null;
         const links = (

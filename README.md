@@ -27,7 +27,7 @@ npm run prod
 connect and navigate to server
 
 ```
-    ssh [user]@[url]
+ssh [user]@[url]
 ```
 
 remove everything in public_html
