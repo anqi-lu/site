@@ -40,7 +40,7 @@ export default class Banner extends Component {
     );
     const bannerJSX = this.props.view === Constants.VIEW_HOME ? (
       <div style={style.banner}>
-        <span style={Object.assign({}, style.img, { marginLeft: '4%', paddingTop: '25px' })}>
+        <span style={{ float: 'left', marginLeft: '4%', paddingTop: '25px' }}>
           {icons}
         </span>
         <h1 style={style.h1}> {this.props.name} </h1>
