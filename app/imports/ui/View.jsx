@@ -24,7 +24,7 @@ export default class View extends Component {
 
   renderItems(items) {
     const itemStyle = {
-      width: '200px',
+      width: '125px',
       display: 'inline-block',
       margin: '3px',
       textAlign: 'right',
@@ -40,11 +40,6 @@ export default class View extends Component {
               {item.tool}
             </h5>
           </span>
-          <img
-            src={addr}
-            alt={item.tool}
-            style={{ height: '45px', width: '45px', marginRight: '25px', marginTop: '5px' }}
-          />
         </div>
       );
     });
