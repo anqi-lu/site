@@ -256,7 +256,6 @@
         "author": "Richard S. Tedlow",
         "category": "next"
     },
-
     {
         "name": "The C Programming Language",
         "author": "Brian Kernighan and Dennis Ritchie",
@@ -267,6 +266,16 @@
         "author": "Venkat Subramaniam",
         "category": "technical"
     },
+    {
+        "name": "Three Statistical Paradoxes in the Interpretation of Group Differences",
+        "author": "Howard Wainer and Lisa M. Brown",
+        "category": "paper"
+    },  
+    {
+        "name": "Effective Java",
+        "author": "Joshua Bloch",
+        "category": "technical"
+    },  
     {
         "name": "Born a Crime",
         "author": "Trevor Noah",
