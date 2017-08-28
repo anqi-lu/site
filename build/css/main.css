@@ -1,6 +1,6 @@
 /* CSS declarations go here */
 body {
-  font-family: Courier New, Courier, monospace;
+  font-family: 'Overpass', sans-serif;/*Courier New, Courier, monospace;*/
   background-color: #FFF;
 
   position: absolute;
@@ -27,6 +27,10 @@ body {
     bottom: 0;
     left: 0;
     right: 0;
+}
+
+h1 {
+  font-family: 'Overpass Mono', monospace;
 }
 
 button {

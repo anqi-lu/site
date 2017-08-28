@@ -106,7 +106,7 @@ export default class Entry extends Component {
         );
         const detailedImages = this.state.hover && this.state.clicked ?
           this.renderDetailedImages(this.props.entry.detailedImages) : null;
-        const statusRight = `    -  ${this.props.entry.status}`;
+        const statusRight = ` -  ${this.props.entry.status}`;
         content = (
           <div>
             <div>

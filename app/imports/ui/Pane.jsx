@@ -96,11 +96,11 @@ export default class Pane extends Component {
     const content = this.state.hover ?
     (
       <div style={style.inner.hover}>
-        <h1 style={style.h2.hover}> {this.props.name} </h1>
+        <h1 className="pane" style={style.h2.hover}> {this.props.name} </h1>
       </div>
     ) : (
       <div style={style.inner.default}>
-        <h1 style={style.h2.default}> {this.props.name} </h1>
+        <h1 className="pane" style={style.h2.default}> {this.props.name} </h1>
       </div>
     );
 

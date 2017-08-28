@@ -35,6 +35,8 @@ export default class Banner extends Component {
           <a href={`https://github.com/anqi-lu`} style={style.link} ><i className="fa fa-github fa-lg" /></a>
           <span> </span>
           <a href={`https://linkedin.com/in/anqi-lu-5aa507a8/`} style={style.link} ><i className="fa fa-linkedin fa-lg" /></a>
+          <span> </span>
+          <a href={`https://drive.google.com/file/d/0B4DdLxOOLcokeWU2ckZQRkJuRms/view?usp=sharing`} style={style.link} ><i className="fa fa-file-pdf-o" /></a>
         </span>
       </div>
     );

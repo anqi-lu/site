@@ -38,24 +38,32 @@ if (LU) {
 
   langs = [
     {
-      tool: 'c++',
-      icon: 'cpp.png',
-    },
-    {
       tool: 'Java',
       icon: 'java.png',
-    },
-    {
-      tool: 'Javascript',
-      icon: 'javascript.png',
     },
     {
       tool: 'Python',
       icon: 'Python.png',
     },
     {
+      tool: 'Javascript',
+      icon: 'javascript.png',
+    },
+    {
+      tool: 'C++',
+      icon: 'cpp.png',
+    },
+    {
       tool: 'C',
       icon: 'c.png',
+    },
+    {
+      tool: 'SQL',
+      icon: '',
+    },
+    {
+      tool: 'MATLAB',
+      icon: '',
     },
     {
       tool: 'Racket',
@@ -64,7 +72,23 @@ if (LU) {
   ];
   tools = [
     {
+      tool: 'Maven',
+      icon: '',
+    },
+    {
+      tool: 'JHurl',
+      icon: '',
+    },
+    {
+      tool: 'sklearn',
+      icon: 'sklearn.png',
+    },
+    {
       tool: 'React',
+      icon: 'react.png',
+    },
+    {
+      tool: 'Node.js',
       icon: 'react.png',
     },
     {
@@ -76,7 +100,7 @@ if (LU) {
       icon: 'meteor.png',
     },
     {
-      tool: 'MongoDB',
+      tool: 'LaTeX',
       icon: 'mongo.svg',
     },
   ];

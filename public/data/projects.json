@@ -1,6 +1,6 @@
 [
     {
-        "name": "playground",
+        "name": "site",
         "tools": [
             {
                 "tool": "Javascript",
@@ -9,12 +9,20 @@
             {
                 "tool": "React",
                 "icon" : "react.png"
+            },
+            {
+                "tool": "Meteor",
+                "icon" : "meteor.png"
+            },
+            {
+                "tool": "MongoDB",
+                "icon" : "mongo.svg"
             }
         ],
-        "date": "June 2016",
+        "date": "August 2017",
         "category": "personal",
-        "description": "Designed a platform for visual displays and data visualizations. Each indivdual display is built on the HTML5 canvas.",
-        "link": "http://playground.vision"
+        "description": "This website! This is a collaboration to build a reactive and clean personal website that is easily extensible.",
+        "link": "https://wpi.edu/~alu"
     },
     {
         "name": "Jane",
@@ -46,73 +54,21 @@
         ],
         "date": "January 2017",
         "category": "personal",
-        "description": "A *life-like* messenger chatbot that can tell you the weather, tell your original stories, call you on your phone, and play games! (Currently private only.) Built as part of WPI's hackathon.",
-        "link": ""
+        "description": "A *life-like* messenger chatbot that can tell you the weather, tell your original stories, call you on your phone, and play games! (Currently private only.) Created during Hack@WPI 2017.",
+        "link": "devpost.com/software/jane"
     },
     {
-        "name": "Machine Learning: Character Trajectories",
+        "name": "Machine Learning - Coursera",
         "tools": [
             {
-                "tool": "Python",
-                "icon": "Python.png"
-            },
-            {  
-                 "tool": "Keras",
-                 "icon": "keras.png"
-            },
-            {
-                "tool": "MatLab",
-                "icon": "matlab.png"
+                "tool": "Octave",
+                "icon" : "octave.png"
             }
         ],
-        "date": "April 2017",
-        "description": "Using a wide range of machine learning techniques, focusing on RNNs, GRUs, and LSTMs, implemented models to classify characters given the velocities of touch on a tablet. Also, predicted the next time step's velocities, generating smooth drawings. Utilized Matlab and Keras. Built for a graduate Machine Learning class.",
-        "link": "https://docs.google.com/presentation/d/1pN5UUsrDJHjLpsrR1bzuj-iF15362KIytOYET0lNDf0/edit?usp=sharing"
-    },
-    {
-        "name": "Statistical Learning: Analyzing Breast Cancer Data",
-        "tools": [
-            {
-                "tool": "Python",
-                "icon": "Python.png"
-            }, 
-            {
-                "tool": "sklearn",
-                "icon": "sklearn.png"
-            }, 
-            {
-                "tool": "scipy",
-                "icon": "scipy.png"
-            } 
-            ],
-        "date": "April 2017",
-        "category": "academic",
-        "description": "Investigated the Breast Cancer dataset in the UCR repository to classify patients' cancers as malignant or benign. Achieved over 98% accuracy using Boostrapped Logistic Regression. Models were implemented using Python and SkLearn."
-    },
-    {
-        "name": "site",
-        "tools": [
-            {
-                "tool": "Javascript",
-                "icon" : "javascript.png"
-            },
-            {
-                "tool": "React",
-                "icon" : "react.png"
-            },
-            {
-                "tool": "Meteor",
-                "icon" : "meteor.png"
-            },
-            {
-                "tool": "MongoDB",
-                "icon" : "mongo.svg"
-            }
-        ],
-        "date": "May 2017",
+        "date": "Summer 2016",
         "category": "personal",
-        "description": "This website! This is a collaboration to build a reactive and clean personal website that is easily extensible.",
-        "link": "https://cjlovering/site"
+        "description": "Worked through online Coursera class Machine Learning taught by Andrew Ng. Manually implemented neural network (feedforward and backpropagation) to recognize hand-written numeric digits. Also implemented support vector machine, clustering, dimension reduction, and recommender system.",
+        "link": ""
     },
     {
         "name": "Data Mining: Clustering and Graphs",
@@ -149,6 +105,36 @@
         "link": ""
     },
     {
+        "name": "Webware: THEIA: Yelp Dataset Visualization",
+        "tools": [
+            {
+                "tool": "JavaScript",
+                "icon" : "javascript.png"
+            },
+            {
+                "tool": "d3",
+                "icon" : "d3.svg"
+            }
+        ],
+        "date": "December 2016",
+        "category": "academic",
+        "description": "Cooperated in small team to build THEIA; a platform for Yelp (restaurant) data comprehension. By offering interactive visualizations that capture the patterns of immense datasets, THEIA supplies a visual context. This work utilizes tree map, bubble chart, and zoomable area.",
+        "link": "bit.ly/theia-yelp"
+    },
+    {
+        "name": "AI for Interactive Media: Competitive Programatic Soccer Team",
+        "tools": [
+            {
+                "tool": "c++",
+                "icon" : "cpp.png"
+            }
+        ],
+        "date": "November 2016",
+        "category": "academic",
+        "description": "Created a team of bots to play soccer together, and compete in a tournament. Enabled bots to calculate trajectories of bounced balls, and coordinate while balancing the tradeoff of CPU usage and performance.",
+        "link": "bit.ly/theia-yelp"
+    },
+    {
         "name": "Artificial Intelligence: Search",
         "tools": [
             {
@@ -166,54 +152,24 @@
         "link": ""
     },
     {
-        "name": "Artificial Intelligence: Clustering",
+        "name": "Artificial Intelligence: Deep Neural Network",
         "tools": [
             {
                 "tool": "Python",
                 "icon" : "Python.png"
+            },
+            {
+                "tool": "TensorFlow",
+                "icon" : "tf.png"
             }
         ],
         "date": "October 2016",
         "category": "academic",
-        "description": "Implemented the Expectation Maximization algorithm for an unknown number of models.",
+        "description": "Implemented simple neural network, deep neural network, and convolutational network using TensorFlow to recognize hand-written alpha-numericals from MNIST and notMNIST datasets. Compared and explored the accuracy of different neural networks by tuning the parameters, adding noise to the dataset, and testing on customized hand-drawn examples.",
         "link": ""
     },
     {
-        "name": "Network Security: Aminon",
-        "tools": [
-            {
-                "tool": "Python",
-                "icon" : "Python.png"
-            },
-            {
-                "tool": "BIND9",
-                "icon" : "bind9.png"
-            }
-        ],
-        "date": "Fall 2016",
-        "category": "academic",
-        "description": "Designed and implemented a lightweight capability gatekeeper utilizing DNS servers built on BIND9, a modified NAT router created with iptables, and used Python to create the asset server and honeypot. Worked collaboratively, and focused on the filtering of users passing through network by modifying packets.",
-        "link": ""
-    },
-    {
-        "name": "Programming Languages",
-        "tools": [
-            {
-                "tool": "Racket",
-                "icon" : "racket.png"
-            },
-            {
-                "tool": "Haskell",
-                "icon" : "haskell.png"
-            }
-        ],
-        "date": "May 2016",
-        "category": "academic",
-        "description": "Built a type-inferencer using a unification algorithm with an occurs check using Racket. Created an object-oriented language with inheritance and a language with lists and exceptions. Using Haskell, explored the usage of lazy functions and implemented LCS with Dynamic Programming.",
-        "link": ""
-    },
-    {
-        "name": "Software Engineering: CapraNav",
+        "name": "Software Engineering: goatThere()",
         "tools": [
             {
                 "tool": "Java",
@@ -222,29 +178,9 @@
         ],
         "date": "Fall 2016",
         "category": "academic",
-        "description": "Led 9-person team, built backend for a mapping tool to find the way between locations at WPI using Java. Built a polished UI with interactive paths, resizing, a tutorial, and smooth transitions using JavaFX. Teams had 10 people, and were organized to operate in an Agile manner. Won Best Project out of 10 teams.",
-        "link": ""
-    },
-    {
-        "name": "cs231n",
-        "tools": [
-            {
-                "tool": "Python",
-                "icon" : "Python.png"
-            },
-            {
-                "tool": "scipy",
-                "icon" : "scipy.png"
-            },
-            {
-                "tool": "TensorFlow",
-                "icon" : "tf.png"
-            }
-        ],
-        "date": "Winter 2016-2017",
-        "category": "personal",
-        "description": "Worked through online Stanford class cs231n. Manually implemented neural network API that supports variable hidden layers, backpropagation, batch normalization and dropout. Further implemented a similar convolutional network class. Trained a CNN instance with 4 layers to classify the CIFAR-10 dataset.",
+        "description": "Worked in a 7-person team, built backend for a desktop app to find the way between locations at WPI. Played the role of Product Owner and Test Engineer, facilitating user stories, burn-down and quality assurance.",
         "link": ""
     }
+
 ]
 
