@@ -32,9 +32,9 @@ export default class Banner extends Component {
     const icons = (
       <div style={{ textAlign: 'center', color: 'black' }}>
         <span>
-          <a href={`https://github.com/${this.props.user}`} style={style.link} ><i className="fa fa-github fa-lg" /></a>
+          <a href={`https://github.com/anqi-lu`} style={style.link} ><i className="fa fa-github fa-lg" /></a>
           <span> </span>
-          <a href={`https://linkedin.com/in/${this.props.user}`} style={style.link} ><i className="fa fa-linkedin fa-lg" /></a>
+          <a href={`https://linkedin.com/in/anqi-lu-5aa507a8/`} style={style.link} ><i className="fa fa-linkedin fa-lg" /></a>
         </span>
       </div>
     );

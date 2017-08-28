@@ -58,18 +58,18 @@ class App extends Component {
         marginLeft: '4%',
         marginRight: '1%',
       },
-      reas: {
+      prof: {
         float: 'left',
         marginLeft: '1%',
         marginRight: '4%',
       },
-      read: {
+      reas: {
         float: 'left',
         clear: 'left',
         marginLeft: '4%',
         marginRight: '1%',
       },
-      prof: {
+      read: {
         float: 'left',
         marginLeft: '1%',
         marginRight: '4%',
@@ -108,6 +108,12 @@ class App extends Component {
               wraps={this.state.wraps}
             />
             <Pane
+              {...config.prof}
+              style={style.prof} 
+              onClick={() => this.setView(Constants.VIEW_PROF)}
+              wraps={this.state.wraps}
+            />
+            <Pane
               {...config.reas}
               style={style.reas}
               onClick={() => this.setView(Constants.VIEW_RESE)}
@@ -117,12 +123,6 @@ class App extends Component {
               {...config.read}
               style={style.read}
               onClick={() => this.setView(Constants.VIEW_READ)}
-              wraps={this.state.wraps}
-            />
-            <Pane
-              {...config.prof}
-              style={style.prof} 
-              onClick={() => this.setView(Constants.VIEW_PROF)}
               wraps={this.state.wraps}
             />
           </div>

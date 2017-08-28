@@ -1,4 +1,4 @@
-const LU = false;
+const LU = true;
 let config;
 let tools;
 let langs;
@@ -6,33 +6,35 @@ let interests;
 let name;
 
 if (LU) {
-  name = 'Anqi Lu - 安奇路';
+  name = 'Anqi Lu - 陆安琪';
   config = {
     proj: {
       color: 'rgba(159, 74, 90, 0.35)',
       name: 'projects',
-      image: 'proj.jpg',
-    },
-    reas: {
-      color: 'rgba(60, 166, 139, 0.35)',
-      name: 'research',
-      image: 'reas.jpg',
-    },
-    read: {
-      color: 'rgba(251, 181, 66, 0.35)',
-      name: 'reading',
-      image: 'read.jpg',
+      image: 'al-proj.jpg',
     },
     prof: {
-      color: 'rgba(176, 95, 109, 0.35)',
+      color: 'rgba(60, 166, 139, 0.35)',
       name: 'professional',
-      image: 'prof.jpg',
+      image: 'al-prof.jpg',
+    },
+    reas: {
+      color: 'rgba(251, 181, 66, 0.35)',
+      name: 'school',
+      image: 'al-scho.jpg',
+    },
+    read: {
+      color: 'rgba(176, 95, 109, 0.35)',
+      name: 'about',
+      image: 'al-abou.jpg',
     },
   };
 
-  interests = `I am interested in building backend systems. I also enjoy 
-  creating applications from the ground up, with a focus on the persepective
-  of design. Both aesthetically in terms of UI, and the application's systems.`;
+  interests = `I'm alway looking for new challenges. Topics around machine learning 
+  really interest me and I'm learning vigorously.
+  I also enjoy creating applications from the ground up, with a focus on the persepective
+  of design. Both aesthetically in terms of UI, and the application's systems.
+  `;
 
   langs = [
     {

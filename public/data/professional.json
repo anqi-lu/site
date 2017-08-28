@@ -1,30 +1,30 @@
 [
     {
-        "name": "Software Engineering Intern",
-        "company": "Google",
-        "date": ["May 2017", "Aug 2017"],
-        "icon": "google.png",
-        "description": ""
-    },
-    {
         "name": "Teaching Assistant (Undergraduate)",
         "company": "Worcester Polytechnic Institute",
-        "date": ["September 2016", "May 2017"],
+        "date": ["Aug 2017", "Oct 2017"],
         "icon": "wpi.png",
-        "description": "2905 - Data Analysis for Game Development\n 2011 - Assembly and Machine Organization\n2020 - Discrete Mathematics\n2011 - Assembly and Machine Organization\n2303 - Systems Programming\n2301 - Systems Programming Non-Major\n1101 - Introduction to CS: Functional Programming"
+        "description": "[CS4241 Webware]\n Develop course outline and course website on github.\n Grade homework, project, and exams.\n Hold office hours to help students with the coursework."
+    },
+    {
+        "name": "Backend Engineering Intern (R&D)",
+        "company": "Spotify",
+        "date": ["May 2017", "Aug 2017"],
+        "icon": "spotify.png",
+        "description": "Created and whitelisted a backend service for previewing advertisements on mobile devices for the ad sales team.\n Implemented email alert and retries when ads encounter overbooking alert utilizing Failsafe and internal emailing tool."
     },
     {
         "name": "Software Engineering Intern",
-        "company": "Silicon Labs",
+        "company": "Kronos Incorporated, Inc.",
         "date": ["May 2016", "Aug 2016"],
-        "icon": "siliconLabs.png",
-        "description": "Built a fuzz-testing engine to test the security of the Thread protocol stack using Java. Developed internal plugin to test cache-performance of a micro-chip using C."
+        "icon": "kronos.png",
+        "description": "Design, support, and maintain development on web-based technology solutions using AngularJS. Implement automation tests using Selenium and Protractor. Work closely with a team in agile system development life cycle."
     },
     {
-        "name": "Software Engineering Intern",
-        "company": "Imagitas",
-        "date": ["May 2015", "Aug 2015"],
-        "icon": "imagitas.jpg",
-        "description": "Developed, maintained, and enhanced build and deployment scripts using python, perl and git. Enhanced automatic testing of source code by writing selenium tests using a robot framework."
+        "name": "Web Developer Intern",
+        "company": "Daohang Textile Technology, Inc.",
+        "date": ["June 2015", "Aug 2015"],
+        "icon": "daohang.jpeg",
+        "description": "Developed a second-handed item trading website for Chinese college campuses with Model-View-Controller model and PHP."
     }
 ]
