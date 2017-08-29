@@ -1,168 +1,155 @@
 [
     {
-        "name": "Genex",
+        "name": "[CS573] Data Visualization",
         "tools": [
             {
-                "tool": "c++",
-                "icon": "cpp.png"
-            },
-            {
-                "tool": "CMAKE",
-                "icon": "cmake.png"
-            },
-            {
-                "tool": "Boost",
-                "icon": "boost.png"
+                "tool": "d3",
+                "icon": "d3.svg"
             }
         ],
-        "detailedImages": [
-        ],
-        "description": "System for fast and accurate time series similarity searches. Utilizes a theoretically novel and performant system that allows users to use a generalized dynammic timewarping with any distance function. Distance function can be implemented by extending an interface and implementing the disance in a manner as directed in the paper.",
+        "description": "This course exposes students to the field of data visualization, i.e., the graphical communication of data and information for the purposes of presentation, confirmation, and exploration. The course introduces the stages of the visualization pipeline. This includes data modeling, mapping data attributes to graphical attributes, visual display techniques, tools, paradigms, and perceptual issues. ",
         "status": "In Progress.",
-        "citation": "",
-        "link": {
-            "code": "http://github.com/c2research/genex",
-            "paper": ""
-        }
+        "category": "Computer Science"
     },
     {
-        "name": "Generalized Dynamic Time Warping",
+        "name": "[MA4603] Statistical Methods in Genetics and Bioinformatics",
         "tools": [
             {
-                "tool": "c++",
-                "icon": "cpp.png"
-            },
+                "tool": "R",
+                "icon": "r.png"
+            }
+        ],
+        "description": "This course provides students with knowledge and understanding of the applications of statistics in modern genetics and bioinformatics. The course generally covers population genetics, genetic epidemiology, and statistical models in bioinformatics. Statistical approaches include log-likelihood ratio tests, score tests, generalized linear models, EM algorithm, Markov chain Monte Carlo, hidden Markov model, and classification and regression trees. ",
+        "status": "In Progress.",
+        "category": "Math"
+    },
+    {
+        "name": "[MA3831] Principles of Real Analysis I",
+        "tools": [
+        ],
+        "description": " Topics covered include: basic set theory, elementary topology of Euclidean spaces, limits and continuity, differentiation Reimann-Stieltjes integration, infinite series, sequences of functions, and topics in multivariate calculus.",
+        "status": "A.",
+        "category": "Math"
+    },
+    {
+        "name": "[MA3257] Numerical Methods for Linear and Nonlinear Systems",
+        "tools": [
             {
-                "tool": "CMAKE",
-                "icon": "cmake.png"
-            },
-            {
-                "tool": "Boost",
-                "icon": "boost.png"
-            },
-            {
-                "tool": "MatLab",
+                "tool": "MATLAB",
                 "icon": "matlab.png"
             }
         ],
-        "detailedImages": [
-        ],
-        "description": "Theoretically novel system that allows users to use a generalized dynammic timewarping with any distance function. Distance function can be implemented by extending a small class in a manner as directed in the paper.",
-        "status": "Under Review.",
-        "citation": "",
-        "link": {
-            "code": "http://github.com/c2research/gdtw",
-            "paper": ""
-        }
+        "description": "This course provides an introduction to modern computational methods for differential and integral calculus and differential equations. Topics covered include: interpolation and polynomial approximation, approximation theory, numerical differentiation and integration, numerical solutions of ordinary differential equations. Error analysis will be emphasized throughout.",
+        "status": "A.",
+        "category": "Math"
     },
     {
-        "name": "Interactive Time Series Analytics",
+        "name": "[CS4445] Data Mining and Knowledge Discovery in Databases",
+        "tools": [
+            {
+                "tool": "python",
+                "icon": "Python.png"
+            },
+            {
+                "tool": "jupyter",
+                "icon": "jupyter.png"
+            }
+        ],
+        "description": "This course provides an introduction to Knowledge Discovery in Databases (KDD) and Data Mining. KDD deals with data integration techniques and with the discovery, interpretation and visualization of patterns in large collections of data. Topics covered in this course include data warehousing and mediation techniques; data mining methods such as rule-based learning, decision trees, association rules and sequence mining; and data visualization. The work discussed originates in the fields of artificial intelligence, machine learning, statistical data analysis, data visualization, databases, and information retrieval. ",
+        "status": "A.",
+        "category": "Computer Science"
+    },
+    {
+        "name": "[CS4241] Webware: Computational Technology for Network Information Systems",
+        "tools": [
+            {
+                "tool": "javascript",
+                "icon": "javascript.png"
+            }
+        ],
+        "description": "This course explores the computational aspects of network information systems as embodied by the World Wide Web (WWW). Topics include: languages for document design, programming languages for executable content, scripting languages, design of WWW based human/computer interfaces, client/server network architecture models, high level network protocols (e.g., http), and modern web technologies. ",
+        "status": "A.",
+        "category": "Computer Science"
+    },
+    {
+        "name": "[CS4341] Introduction to Artificial Intelligence",
+        "tools": [
+            {
+                "tool": "python",
+                "icon": "Python.png"
+            }
+        ],
+        "description": "This course studies the problem of making computers act in ways which we call \"intelligent\". Topics include major theories, tools and applications of artificial intelligence, aspects of knowledge representation, searching and planning, and natural language understanding. Students will be expected to complete projects which express problems that require search in state spaces, and to propose appropriate methods for solving the problems. ",
+        "status": "A.",
+        "category": "Computer Science"
+    },
+    {
+        "name": "[CS4100] Artificial Intelligence for Interactive Media and Games",
         "tools": [
             {
                 "tool": "c++",
                 "icon": "cpp.png"
-            },
-            {
-                "tool": "Javascript",
-                "icon" : "javascript.png"
-            },
-            {
-                "tool": "Python",
-                "icon" : "Python.png"
-            },
-            {
-                "tool": "Boost",
-                "icon" : "boost.png"
-            },
-            {
-                "tool": "React",
-                "icon" : "react.png"
-            },
-            {
-                "tool": "D3",
-                "icon" : "d3.svg"
             }
         ],
-        "detailedImages": [
-        ],
-        "description": "Web platform allowing for the interactive exploration of time series similarity. Allows users to explore connections betweens sequences using dynammic time warping and visually displaying the results.",
-        "status": "SIGMOD '17- Proceedings of the 2017 ACM...",
-        "citation": "http://dl.acm.org/citation.cfm?id=3058729&CFID=768471185&CFTOKEN=33366380",
-        "link": {
-            "code": "http://github.com/c2research/onex",
-            "paper": "http://dl.acm.org/citation.cfm?id=3058729&CFID=768471185&CFTOKEN=33366380"
-        }
+        "description": "This course develops the skill of analyzing the behavior of algorithms. Topics include the analysis, with respect to average and worst case behavior and correctness, of algorithms for internal sorting, pattern matching on strings, graph algorithms, and methods such as recursion elimination, dynamic programming, and program profiling. ",
+        "status": "A.",
+        "category": "Computer Science"
     },
     {
-        "name": "Counting Sea Lion Populations",
+        "name": "[CS4120] Analysis of Algorithms",
         "tools": [
-            {
-                "tool": "Python",
-                "icon" : "Python.png"
-            },
-            {
-                "tool": "Keras",
-                "icon" : "keras.png"
-            }
         ],
-        "detailedImages": [
-            {
-                "description": "Labeled image.",
-                "image": "works.jpg",
-                "height": 300,
-                "width": 300
-            },
-            {
-                "description": "Labeled image.",
-                "image": "network.png",
-                "height": 164,
-                "width": 450
-            }
-        ],
-        "description": "Saving the declining Steller sea lions in the West- ern Aleutian Islands has been a focus of scientists at the NOAA Fisheries Alaska Fisheries Science Center. In order to understand factors that may be preventing the Steller’s populations from resurging, NOAA collected aerial photographs and counted the different groups within the population. As part of a competition hosted by Kaggle, we developed Deep Learning techniques to automate the process. We experimented with both density counting and object detection approaches, but found little success. Part of the difficulty we had to deal with when approaching this problem was the scale of the data. There was over 100GB, where each image had a dimension of around 4000 by 3000 pixels.",
-        "status": "Academic Class Final Project.",
-        "citation": "",
-        "link": {
-            "code": "https://github.com/benmcmorran/sealions",
-            "paper": "https://github.com/benmcmorran/sealions/blob/master/paper.pdf"
-        }
+        "description": "This course develops the skill of analyzing the behavior of algorithms. Topics include the analysis, with respect to average and worst case behavior and correctness, of algorithms for internal sorting, pattern matching on strings, graph algorithms, and methods such as recursion elimination, dynamic programming, and program profiling. ",
+        "status": "A.",
+        "category": "Computer Science"
     },
     {
-        "name": "Insight: Time Series Analytics",
+        "name": "[CS3733] Software Engineering",
         "tools": [
             {
-                "tool": "c++",
-                "icon": "cpp.png"
-            },
-            {
-                "tool": "Javascript",
-                "icon" : "javascript.png"
-            },
-            {
-                "tool": "Python",
-                "icon" : "Python.png"
-            },
-            {
-                "tool": "Boost",
-                "icon" : "boost.png"
-            },
-            {
-                "tool": "React",
-                "icon" : "react.png"
-            },
-            {
-                "tool": "D3",
-                "icon" : "d3.svg"
+                "tool": "java",
+                "icon": "java.png"
             }
         ],
-        "detailedImages": [
+        "description": "This course introduces the fundamental principles of software engineering. Modern software development techniques and life cycles are emphasized. Topics include requirements analysis and specification, analysis and design, architecture, implementation, testing and quality, configuration management, and project management. ",
+        "status": "A.",
+        "category": "Computer Science"
+    },
+    {
+        "name": "[CS3431] Database Systems I",
+        "tools": [
+            {
+                "tool": "SQL",
+                "icon": "java.png"
+            }
         ],
-        "description": "A precursor to Interactive Time Series Analytics, this was initial work and system building for the web platform allowing for the interactive exploration of time series similarity. Allows users to explore connections betweens sequences using dynammic time warping and visually displaying the results.",
-        "status": "Undergraduate Conference for Research IEEE MIT",
-        "citation": "",
-        "link": {
-            "code": "http://github.com/c2research/onex",
-            "paper": ""
-        }
+        "description": " This course introduces the student to the design, use, and application of database management systems. Topics include the relational data model, relational query languages, design theory, and conceptual data design and modeling for relational database design. Techniques that provide for data independence, and minimal redundancy will be discussed.  ",
+        "status": "A.",
+        "category": "Computer Science"
+    },
+    {
+        "name": "[CS525] Informational Retrieval Methods for Social Web",
+        "tools": [
+        ],
+        "description": "",
+        "status": "To take.",
+        "category": "Computer Science"
+    },
+    {
+        "name": "[CS585] Big Data Management",
+        "tools": [
+        ],
+        "description": "This course introduces the emerging techniques and infrastructures developed for big data management including parallel and distributed database systems, map-reduce infrastructures, scalable platforms for complex data types, stream processing systems, and cloud-based computing. Query processing, optimization, access methods, storage layouts, and energy management techniques developed on these infrastructures will be covered. ",
+        "status": "To take.",
+        "category": "Computer Science"
+    },
+    {
+        "name": "[CS539] Machine Learning",
+        "tools": [
+        ],
+        "description": "The focus of this course is machine learning for knowledge-based systems. It will include reviews of work on similarity-based learning (induction), explanation-based learning, analogical and case-based reasoning and learning, and knowledge compilation. It will also consider other approaches to automated knowledge acquisition as well as connectionist learning. ",
+        "status": "To take.",
+        "category": "Computer Science"
     }
-]
+
+ ]

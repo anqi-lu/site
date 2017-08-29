@@ -3,9 +3,9 @@ import PropTypes from 'prop-types';
 
 import {
   projects,
-  research,
-  reading,
   professional,
+  reading,
+  research,
 } from '../api/data';
 
 // import { createContainer } from '../api/createContainer';

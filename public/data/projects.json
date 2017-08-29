@@ -180,6 +180,19 @@
         "category": "academic",
         "description": "Worked in a 7-person team, built backend for a desktop app to find the way between locations at WPI. Played the role of Product Owner and Test Engineer, facilitating user stories, burn-down and quality assurance.",
         "link": ""
+    },
+    {
+        "name": "Advancing Namibian Higher Education: Promoting the Debut of MOOCs",
+        "tools": [
+            {
+                "tool": "nust",
+                "icon" : "nust.png"
+            }
+        ],
+        "date": "Spring 2017",
+        "category": "iqp",
+        "description": "This project aided the Teaching and Learning Unit at the Namibia University of Science and Technology (NUST), in Windhoek, Namibia, in promoting the launch of two Massive Open Online Courses at the university–the first such initiative in Namibia, contributing to a 160% increase in enrolled students.",
+        "link": ""
     }
 
 ]

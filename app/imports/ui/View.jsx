@@ -112,7 +112,10 @@ export default class View extends Component {
           (entry.category === 'personal'),
         ));
         const academic = this.renderCollection(this.props.collection.filter(entry =>
-          !(entry.category === 'personal'),
+          (entry.category === 'academic'),
+        ));
+        const iqp = this.renderCollection(this.props.collection.filter(entry =>
+          (entry.category === 'iqp'),
         ));
         content = (
           <div>
@@ -121,41 +124,27 @@ export default class View extends Component {
               {personal}
               <h2> Academic </h2>
               {academic}
+              <h2> Interactive Qualifying Project </h2>
+              {iqp}
             </div>
           </div>
         );
         break;
-      case Constants.VIEW_READ:
-        const read = this.renderCollection(this.props.collection.filter(entry =>
-          (entry.category === 'read'),
+      case Constants.VIEW_RESE:
+        const cs = this.renderCollection(this.props.collection.filter(entry =>
+          (entry.category === 'Computer Science'),
         ));
-        const paper = this.renderCollection(this.props.collection.filter(entry =>
-          (entry.category === 'paper'),
+        const math = this.renderCollection(this.props.collection.filter(entry =>
+          (entry.category === 'Math'),
         ));
-        const next = this.renderCollection(this.props.collection.filter(entry =>
-          (entry.category === 'next'),
-        ));
-        const technical = this.renderCollection(this.props.collection.filter(entry =>
-          (entry.category === 'technical'),
-        ));
-
         content = (
           <div>
-            <h3> Current </h3>
-            Books that I am plan on reading / reading next.
-            <div> {next} </div>
-
-            <h3> Papers </h3>
-            Papers that I recently found intriguing.
-            <div> {paper} </div>
-
-            <h3> Technical </h3>
-            Technical material that are pretty good.
-            <div> {technical} </div>
-
-            <h3> Read </h3>
-            Some of the good books I read.
-            <div> {read} </div>
+            <div>
+              <h2> Computer Science </h2>
+              {cs}
+              <h2> Math </h2>
+              {math}
+            </div>
           </div>
         );
         break;

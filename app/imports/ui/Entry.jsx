@@ -73,7 +73,7 @@ export default class Entry extends Component {
           src={addr}
           key={shortid.generate()}
           alt={tool.tool}
-          style={{ height: '25px', width: '25px' }}
+          style={{ height: '25px', width: '25px', filter: 'grayscale(100%)' }}
         /> : null
       );
     }) : null;
@@ -85,27 +85,21 @@ export default class Entry extends Component {
 
     switch (this.props.view) {
       case Constants.VIEW_PROJ:
+        const link = { color: 'green' };
+        const code = this.props.entry.link.code.length > 0 ?
+          (<a href={this.props.entry.link.code} style={link}>link</a>) : null;
         content = (
           <div>
             <h3> {this.props.entry.name} </h3>
             <div> {this.props.entry.description} </div>
             {tools}
+            <div style={style.links}>
+            {code}
+            </div>
           </div>
         );
         break;
       case Constants.VIEW_RESE:
-        const link = { color: 'green' };
-        const code = this.props.entry.link.code.length > 0 ?
-          (<a href={this.props.entry.link.code} style={link}>code</a>) : null;
-        const paper = this.props.entry.link.paper.length > 0 ?
-          (<span> | <a href={this.props.entry.link.paper} style={link}>paper</a> </span>) : null;
-        const links = (
-          <div>
-            {code} {paper}
-          </div>
-        );
-        const detailedImages = this.state.hover && this.state.clicked ?
-          this.renderDetailedImages(this.props.entry.detailedImages) : null;
         const statusRight = ` -  ${this.props.entry.status}`;
         content = (
           <div>
@@ -118,10 +112,6 @@ export default class Entry extends Component {
               <h5> {statusRight} </h5>
             </div>
             <div> {this.props.entry.description} </div>
-            {detailedImages}
-            <div style={style.links}>
-              {links}
-            </div>
             {tools}
           </div>
         );
