@@ -90,7 +90,7 @@ export default class View extends Component {
         content = (
           <div>
             <h3> Interests </h3>
-            <p>
+            <p className="interests">
               {this.props.interests}
             </p>
             <h3> Skills </h3>
@@ -153,10 +153,34 @@ export default class View extends Component {
           </div>
         );
         break;
-      case Constants.VIEW_READ:
-        
+   
       default:
-        content = this.renderCollection(this.props.collection);
+        const hobbies = this.renderItems(this.props.collection.hobbies);
+        const values = this.renderItems(this.props.collection.values);
+        //const summary = this.props.collection.summary;
+        const involve = this.renderCollection(this.props.collection.involve);
+
+        content = (
+          <div>
+            <h3> My Mission Statement </h3>
+            <div className="interests">
+              <p>To find beauty in nature, others, and myself.</p>
+              <p>To hold responsiblities and always keep my words.</p> 
+              <p>To be a positive influence on my family, friends, and those around me.</p>
+              <p>To be cognizant and do every little thing possible that improves the community, the environment, and life of others.</p>        
+            </div>
+            <div>
+              <h4> Values </h4>
+              {values}
+            </div>
+            <div>
+              <h4> Hobbies </h4>
+              {hobbies}
+            </div>
+            <h3> Involvement </h3>
+            {involve}
+          </div>
+        );
         break;
     }
     // TODO add side banner

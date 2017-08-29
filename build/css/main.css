@@ -63,6 +63,16 @@ svg {
   width: 80%;
 }
 
+.box {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.interests {
+  padding-left: 40px; 
+  padding-right: 40px;
+}
+
 .arrow {
   cursor: pointer;
   position: absolute;

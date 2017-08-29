@@ -1,7 +1,69 @@
-[
-    {
-        "values": ["Honest", "Curious", "Sincere", "Creative", "Open-minded"],
-        "hobbies": ["travel", "photography", "fashion", "guitar", "hiking", "new workout"],
-        "description": ""
-    }
-]
+{
+        "values": [
+            {
+                "tool":"Honest", 
+                "icon": ""
+            },
+            {
+                "tool":"Curious", 
+                "icon": ""
+            },
+            {
+                "tool":"Sincere", 
+                "icon": ""
+            },
+            {
+                "tool":"Creative", 
+                "icon": ""
+            },
+            {
+                "tool":"Open-minded", 
+                "icon": ""
+            }
+        ],
+        "hobbies": [
+            {
+                "tool": "Travel", 
+                "icon": ""
+            },
+            {
+                "tool": "Photography", 
+                "icon": ""
+            },
+            {
+                "tool": "Fashion", 
+                "icon": ""
+            },
+            {
+                "tool":"Guitar", 
+                "icon": ""
+            },
+            {
+                "tool":"Workout", 
+                "icon": ""
+            }
+        ],
+        "involve": [
+            {
+                "name": "Chinese Student Association",
+                "company": "President",
+                "date": ["March 2016", "March 2017"],
+                "icon": "csa.png",
+                "description": "CSA's main goals are to provide students with an awareness of the Chinese culture and customs, to help undergraduate and graduate students in adapting to WPI's social life, and to pursue academic excellence by mutual cooperation among the student members. As the President, I held weekly executive board meetings, faciliated campus-wide events, and successfully achieved full fundings for all CSA events from Student Government Association."
+            },
+            {
+                "name": "Women in Computer Science",
+                "company": "Webmaster",
+                "date": ["January 2016", "January 2017"],
+                "icon": "wics.jpeg",
+                "description": "Women in Computer Science is an organization dedicated to help encourage and support women in Computer Science and related fields. We support women in the field through three pillars: social, career, and academics. We hold weekly social events, engage in community outreach and occasionally hold professional events with prospective employers. As the Webmaster, I maintained WiCS website, attended weekly meetings, and helped organize various events."
+            },
+            {
+                "name": "Alpha Gamma Delta - Zeta Zeta Chapter",
+                "company": "Sister",
+                "date": ["December 2014", "present"],
+                "icon": "agd.gif",
+                "description": "THE ALPHA GAMMA DELTA PURPOSE: To gain understanding that wisdom may be vouchsafed to me. To develop and prize health and vigor of body. To cultivate acquaintance with many whom I meet. To cherish friendships with but a chosen few and to study the perfecting of those friendships. To welcome the opportunity of contributing to the world's work in the community where I am placed because of the joy of service thereby bestowed and the talent of leadership multiplied. To honor my home, my country, my religious faith. To hold truth inviolable, sincerity essential, kindness invaluable. To covet beauty in environment, manner, word and thought. To possess high ideals and to attain somewhat unto them. This shall be my purpose that those who know me may esteem Alpha Gamma Delta for her attainments, revere her for her purposes and love her for her Womanhood."
+            }
+        ]
+}

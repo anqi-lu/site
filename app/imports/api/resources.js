@@ -20,7 +20,7 @@ if (LU) {
     },
     reas: {
       color: 'rgba(251, 181, 66, 0.35)',
-      name: 'school',
+      name: 'courses',
       image: 'al-scho.jpg',
     },
     read: {

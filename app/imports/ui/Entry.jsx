@@ -62,6 +62,11 @@ export default class Entry extends Component {
       tools: {
         textAlign: 'center',
       },
+      icons: !this.state.hover ? {
+        maxHeight: '25px', width: 'auto', filter: 'grayscale(100%)',
+      } : {
+        maxHeight: '25px', width: 'auto',
+      },
     };
 
     let content;
@@ -70,10 +75,11 @@ export default class Entry extends Component {
       return (
         tool.icon ?
         <img
+          className="icon"
           src={addr}
           key={shortid.generate()}
           alt={tool.tool}
-          style={{ height: '25px', width: '25px', filter: 'grayscale(100%)' }}
+          style={style.icons}
         /> : null
       );
     }) : null;
@@ -89,7 +95,7 @@ export default class Entry extends Component {
         const code = this.props.entry.link.length > 0 ?
           (<a href={this.props.entry.link} style={link}>link</a>) : null;
         content = (
-          <div>
+          <div className="box">
             <h3> {this.props.entry.name} </h3>
             <div> {this.props.entry.description} </div>
             {tools}
@@ -102,7 +108,7 @@ export default class Entry extends Component {
       case Constants.VIEW_RESE:
         const statusRight = ` -  ${this.props.entry.status}`;
         content = (
-          <div>
+          <div className="box">
             <div>
               <span style={{ float: 'left' }}>
                 <h4 style={style.leftH}>
@@ -116,24 +122,13 @@ export default class Entry extends Component {
           </div>
         );
         break;
-      case Constants.VIEW_READ:
-        content = (
-          <div>
-            <span style={{ float: 'left' }}>
-              <h5 style={style.leftH}> {this.props.entry.name} </h5>
-            </span>
-            <h5 style={{ textAlign: 'right', marginRight: '5px' }}>
-              - {this.props.entry.author}
-            </h5>
-          </div>
-        );
-        break;
-      case Constants.VIEW_PROF:
+      default:
+        //case Constants.VIEW_PROF:
         const title = `${this.props.entry.name} - ${this.props.entry.company}`;
         const dates = `${this.props.entry.date[0]} - ${this.props.entry.date[1]}`;
         const addr = `public/icons/${this.props.entry.icon}`;
         content = (
-          <div>
+          <div className="box">
             <div>
               <span style={{ float: 'left' }}>
                 <h3 style={style.leftH}> {title} </h3>
@@ -141,17 +136,19 @@ export default class Entry extends Component {
               <h5 style={{ textAlign: 'right' }}> {dates} </h5>
             </div>
             <div> {this.props.entry.description} </div>
-            <img src={addr} alt="decorative" style={{ height: '75px', width: '75px', paddingLeft: '45%' }} />
+            <img src={addr} alt="decorative" style={{ maxWidth: '75px', maxHeight: '100px', paddingLeft: '45%' }} />
           </div>
         );
         break;
-      default:
+     // default:
+        
+        
         // no op
-        break;
+      //  break;
     }
 
     return (
-      <div 
+      <div
         style={{
           backgroundColor: this.state.hover ? this.props.color : this.props.backgroundColor,
           paddingTop: '1px',
