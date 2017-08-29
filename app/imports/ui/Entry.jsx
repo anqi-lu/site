@@ -86,15 +86,15 @@ export default class Entry extends Component {
     switch (this.props.view) {
       case Constants.VIEW_PROJ:
         const link = { color: 'green' };
-        const code = this.props.entry.link.code.length > 0 ?
-          (<a href={this.props.entry.link.code} style={link}>link</a>) : null;
+        const code = this.props.entry.link.length > 0 ?
+          (<a href={this.props.entry.link} style={link}>link</a>) : null;
         content = (
           <div>
             <h3> {this.props.entry.name} </h3>
             <div> {this.props.entry.description} </div>
             {tools}
             <div style={style.links}>
-            {code}
+              {code}
             </div>
           </div>
         );

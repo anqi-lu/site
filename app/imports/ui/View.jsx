@@ -120,12 +120,12 @@ export default class View extends Component {
         content = (
           <div>
             <div>
+              <h2> Interactive Qualifying Project </h2>
+              {iqp}
               <h2> Personal </h2>
               {personal}
               <h2> Academic </h2>
-              {academic}
-              <h2> Interactive Qualifying Project </h2>
-              {iqp}
+              {academic}           
             </div>
           </div>
         );
@@ -140,6 +140,11 @@ export default class View extends Component {
         content = (
           <div>
             <div>
+              <h1> Worcester Polytechnic Institute </h1>
+              <div className="degree">
+                <h4> BS, Computer Science, ’18 </h4> <a className="detail"> minor in mathematical sciences. </a>
+                <h4> MS, Computer Science, ’19 </h4> <a className="detail"> focus in Data Mining/Machine Learning.</a>
+              </div>
               <h2> Computer Science </h2>
               {cs}
               <h2> Math </h2>
@@ -148,6 +153,8 @@ export default class View extends Component {
           </div>
         );
         break;
+      case Constants.VIEW_READ:
+        
       default:
         content = this.renderCollection(this.props.collection);
         break;

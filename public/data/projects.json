@@ -55,7 +55,7 @@
         "date": "January 2017",
         "category": "personal",
         "description": "A *life-like* messenger chatbot that can tell you the weather, tell your original stories, call you on your phone, and play games! (Currently private only.) Created during Hack@WPI 2017.",
-        "link": "devpost.com/software/jane"
+        "link": "https://www.devpost.com/software/jane"
     },
     {
         "name": "Machine Learning - Coursera",
@@ -119,7 +119,7 @@
         "date": "December 2016",
         "category": "academic",
         "description": "Cooperated in small team to build THEIA; a platform for Yelp (restaurant) data comprehension. By offering interactive visualizations that capture the patterns of immense datasets, THEIA supplies a visual context. This work utilizes tree map, bubble chart, and zoomable area.",
-        "link": "bit.ly/theia-yelp"
+        "link": "https://bit.ly/theia-yelp"
     },
     {
         "name": "AI for Interactive Media: Competitive Programatic Soccer Team",
@@ -132,7 +132,7 @@
         "date": "November 2016",
         "category": "academic",
         "description": "Created a team of bots to play soccer together, and compete in a tournament. Enabled bots to calculate trajectories of bounced balls, and coordinate while balancing the tradeoff of CPU usage and performance.",
-        "link": "bit.ly/theia-yelp"
+        "link": ""
     },
     {
         "name": "Artificial Intelligence: Search",
@@ -192,7 +192,7 @@
         "date": "Spring 2017",
         "category": "iqp",
         "description": "This project aided the Teaching and Learning Unit at the Namibia University of Science and Technology (NUST), in Windhoek, Namibia, in promoting the launch of two Massive Open Online Courses at the university–the first such initiative in Namibia, contributing to a 160% increase in enrolled students.",
-        "link": ""
+        "link": "http://studentsuccess.nust.na/?q=node/21275"
     }
 
 ]

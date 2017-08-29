@@ -29,6 +29,23 @@ body {
     right: 0;
 }
 
+.degree {
+  padding-left: 40px;
+  padding-bottom: 30px;
+}
+
+.detail {
+  color: grey;
+  padding-left: 40px;
+}
+
+i {
+  margin-right: 8px;
+}
+
+#px {
+  margin-left: 3px;
+}
 h1 {
   font-family: 'Overpass Mono', monospace;
 }
