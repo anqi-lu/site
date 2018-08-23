@@ -7,7 +7,7 @@ Collaboration to build a reactive and clean personal website.
 Install dependencies
 
 ```
-npm run install
+npm install
 ```
 
 To develop and hot load changes run

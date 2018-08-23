@@ -1,5 +1,49 @@
 [
     {
+        "name": "[CS525] Informational Retrieval Methods for Social Web",
+        "tools": [
+            {
+                "tool": "python",
+                "icon": "Python.png"
+            },
+            {
+                "tool": "beautifulsoup",
+                "icon": "bs.png"
+            }
+        ],
+        "description": "This course introduces theory, design, and implementation of text-based and Web-based information retrieval systems. Students learn components and operation of search engines providing search services. Components include web crawlers, indexers, link-based ranking algorithms, and recommender systems.",
+        "status": "A.",
+        "category": "Computer Science"
+    },
+    {
+        "name": "[CS585] Big Data Management",
+        "tools": [
+            {
+                "tool": "aws",
+                "icon": "aws.png"
+            },
+            {
+                "tool": "gcp",
+                "icon": "gcp.png"
+            }
+        ],
+        "description": "This course introduces the emerging techniques and infrastructures developed for big data management including parallel and distributed database systems, map-reduce infrastructures, scalable platforms for complex data types, stream processing systems, and cloud-based computing. Query processing, optimization, access methods, storage layouts, and energy management techniques developed on these infrastructures will be covered. ",
+        "status": "A.",
+        "category": "Computer Science"
+    },
+    {
+        "name": "[CS539] Machine Learning",
+        "tools": [
+            {
+                "tool": "pytorch",
+                "icon": "pytorch.png"
+            }
+        ],
+        "description": "The focus of this course is machine learning for knowledge-based systems. It will include reviews of work on similarity-based learning (induction), explanation-based learning, analogical and case-based reasoning and learning, and knowledge compilation. It will also consider other approaches to automated knowledge acquisition as well as connectionist learning. ",
+        "status": "A.",
+        "category": "Computer Science"
+    },
+    {
         "name": "[CS573] Data Visualization",
         "tools": [
             {
@@ -8,7 +52,7 @@
             }
         ],
         "description": "This course exposes students to the field of data visualization, i.e., the graphical communication of data and information for the purposes of presentation, confirmation, and exploration. The course introduces the stages of the visualization pipeline. This includes data modeling, mapping data attributes to graphical attributes, visual display techniques, tools, paradigms, and perceptual issues. ",
-        "status": "In Progress.",
+        "status": "A.",
         "category": "Computer Science"
     },
     {
@@ -20,7 +64,7 @@
             }
         ],
         "description": "This course provides students with knowledge and understanding of the applications of statistics in modern genetics and bioinformatics. The course generally covers population genetics, genetic epidemiology, and statistical models in bioinformatics. Statistical approaches include log-likelihood ratio tests, score tests, generalized linear models, EM algorithm, Markov chain Monte Carlo, hidden Markov model, and classification and regression trees. ",
-        "status": "In Progress.",
+        "status": "A.",
         "category": "Math"
     },
     {
@@ -126,30 +170,5 @@
         "description": " This course introduces the student to the design, use, and application of database management systems. Topics include the relational data model, relational query languages, design theory, and conceptual data design and modeling for relational database design. Techniques that provide for data independence, and minimal redundancy will be discussed.  ",
         "status": "A.",
         "category": "Computer Science"
-    },
-    {
-        "name": "[CS525] Informational Retrieval Methods for Social Web",
-        "tools": [
-        ],
-        "description": "",
-        "status": "To take.",
-        "category": "Computer Science"
-    },
-    {
-        "name": "[CS585] Big Data Management",
-        "tools": [
-        ],
-        "description": "This course introduces the emerging techniques and infrastructures developed for big data management including parallel and distributed database systems, map-reduce infrastructures, scalable platforms for complex data types, stream processing systems, and cloud-based computing. Query processing, optimization, access methods, storage layouts, and energy management techniques developed on these infrastructures will be covered. ",
-        "status": "To take.",
-        "category": "Computer Science"
-    },
-    {
-        "name": "[CS539] Machine Learning",
-        "tools": [
-        ],
-        "description": "The focus of this course is machine learning for knowledge-based systems. It will include reviews of work on similarity-based learning (induction), explanation-based learning, analogical and case-based reasoning and learning, and knowledge compilation. It will also consider other approaches to automated knowledge acquisition as well as connectionist learning. ",
-        "status": "To take.",
-        "category": "Computer Science"
     }
-
  ]

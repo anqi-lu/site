@@ -30,20 +30,20 @@ if (LU) {
     },
   };
 
-  interests = `I'm alway looking for new challenges. Topics around machine learning 
-  really interest me and I'm learning vigorously.
+  interests = `I'm alway looking for new challenges. I've worked on a couple big data and machine 
+  learning projects. 
   I also enjoy creating applications from the ground up, with a focus on the persepective
   of design. Both aesthetically in terms of UI, and the application's systems.
   `;
 
   langs = [
     {
-      tool: 'Java',
-      icon: 'java.png',
-    },
-    {
       tool: 'Python',
       icon: 'Python.png',
+    },
+    {
+      tool: 'Java',
+      icon: 'java.png',
     },
     {
       tool: 'Javascript',
@@ -72,11 +72,11 @@ if (LU) {
   ];
   tools = [
     {
-      tool: 'Maven',
+      tool: 'Git',
       icon: '',
     },
     {
-      tool: 'JHurl',
+      tool: 'MapReduce',
       icon: '',
     },
     {
@@ -89,19 +89,19 @@ if (LU) {
     },
     {
       tool: 'Node.js',
-      icon: 'react.png',
+      icon: 'nodejs.png',
     },
     {
       tool: 'D3',
       icon: 'd3.svg',
     },
     {
-      tool: 'Meteor',
-      icon: 'meteor.png',
+      tool: 'Maven',
+      icon: '',
     },
     {
       tool: 'LaTeX',
-      icon: 'mongo.svg',
+      icon: '',
     },
   ];
 } else {

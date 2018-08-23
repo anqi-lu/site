@@ -31,7 +31,7 @@
                 "icon": ""
             },
             {
-                "tool": "Fashion", 
+                "tool": "Hike", 
                 "icon": ""
             },
             {
@@ -39,7 +39,11 @@
                 "icon": ""
             },
             {
-                "tool":"Workout", 
+                "tool":"Music", 
+                "icon": ""
+            },
+            {
+                "tool":"Yoga", 
                 "icon": ""
             }
         ],

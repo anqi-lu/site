@@ -1,5 +1,98 @@
 [
     {
+        "name": "Fact or Fiction",
+        "tools": [
+            {
+                "tool": "javascript",
+                "icon" : "javascript.png"
+            },
+            {
+                "tool": "ASP.NET",
+                "icon" : "dotnet.png"
+            }, 
+            {
+                "tool": "reactredux",
+                "icon" : "reactredux.png"
+            },
+            {
+                "tool": "azure",
+                "icon" : "azure.png"
+            }
+        ],
+        "date": "Oct - Dec 2017",
+        "category": "academic",
+        "description": "Fact or Fiction is a web platform that extracts objective statements in text documents to foster constructive conversations. We trained the models from our hand-labeled data from various news sources.\n Submitted paper to Computer-Supported Cooperative Work and Social Computing(CSCW) 2018 as a primary author.",
+        "link": ""
+    },
+    {
+        "name": "Alcogait",
+        "tools": [
+            {
+                "tool": "python",
+                "icon" : "Python.png"
+            },
+            {
+                "tool": "matlab",
+                "icon" : "matlab.png"
+            }
+        ],
+        "date": "Jan - May 2018",
+        "category": "academic",
+        "description": "Alcogait is an Android app that detects BAC level from human walking movement and sends warning signals to drunk users. Designed and built the web service backend in Flask. Collaborated with the research group to integrate ML classifiers.",
+        "link": "https://www.wpi.edu/news/new-app-will-buzz-when-you-re-buzzed"
+    },
+    {
+        "name": "See You Monday",
+        "tools": [
+            {
+                "tool": "python",
+                "icon" : "Python.png"
+            },
+            {
+                "tool": "flask",
+                "icon" : "flask.png"
+            }
+        ],
+        "date": "Mar - Apr 2018",
+        "category": "academic",
+        "description": "See You Monday is a personalized job searching tool that takes in a resume and returns a short list of tailored jobs for each user. We crawled postings from Monsters and calculated match score between the postings and the resume with Jaccard Similarity.",
+        "link": "bit.ly/seeumonday"
+    },
+    {
+        "name": "Unicorn.io",
+        "tools": [
+            {
+                "tool": "python",
+                "icon" : "Python.png"
+            },
+            {
+                "tool": "flask",
+                "icon" : "flask.png"
+            }
+        ],
+        "date": "Feb 2018",
+        "category": "personal",
+        "description": "Submitted to TreeHacks at Stanford. Our website aims to address the pain points for job seekers to find startup companies that do not have postings on the popular job posting websites such as Indeed or Glassdoor. Unicorn.io scrapes company data from Crunchbase and evalues the companies, then find the most suitable matches for you.",
+        "link": "https://devpost.com/software/unicorn-io"
+    },
+    {
+        "name": "Elevate",
+        "tools": [
+            {
+                "tool": "nodejs",
+                "icon" : "nodejs.png"
+            },
+            {
+                "tool": "messenger",
+                "icon" : "messenger.png"
+            }
+        ],
+        "date": "Sept 2017",
+        "category": "personal",
+        "description": "Submitted to HackMIT. Stocks and investments can be intimidating. We created a messenger app that hooks up to Robinhood and trade stocks for you via chat.",
+        "link": "https://devpost.com/software/elevate-85svgy"
+    },
+    {
         "name": "site",
         "tools": [
             {
@@ -13,10 +106,6 @@
             {
                 "tool": "Meteor",
                 "icon" : "meteor.png"
-            },
-            {
-                "tool": "MongoDB",
-                "icon" : "mongo.svg"
             }
         ],
         "date": "August 2017",
@@ -56,19 +145,6 @@
         "category": "personal",
         "description": "A *life-like* messenger chatbot that can tell you the weather, tell your original stories, call you on your phone, and play games! (Currently private only.) Created during Hack@WPI 2017.",
         "link": "https://www.devpost.com/software/jane"
-    },
-    {
-        "name": "Machine Learning - Coursera",
-        "tools": [
-            {
-                "tool": "Octave",
-                "icon" : "octave.png"
-            }
-        ],
-        "date": "Summer 2016",
-        "category": "personal",
-        "description": "Worked through online Coursera class Machine Learning taught by Andrew Ng. Manually implemented neural network (feedforward and backpropagation) to recognize hand-written numeric digits. Also implemented support vector machine, clustering, dimension reduction, and recommender system.",
-        "link": ""
     },
     {
         "name": "Data Mining: Clustering and Graphs",

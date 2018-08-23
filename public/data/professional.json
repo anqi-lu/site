@@ -1,10 +1,17 @@
 [
     {
-        "name": "Teaching Assistant (Undergraduate)",
+        "name": "Learning Assistant",
         "company": "Worcester Polytechnic Institute",
-        "date": ["Aug 2017", "Oct 2017"],
+        "date": ["Fall 2017", "Fall 2018"],
         "icon": "wpi.png",
         "description": "[CS4241 Webware]\n Develop course outline and course website on github.\n Grade homework, project, and exams.\n Hold office hours to help students with the coursework."
+    },
+    {
+        "name": "Software Engineer Intern",
+        "company": "Google",
+        "date": ["May 2018", "Aug 2018"],
+        "icon": "google.png",
+        "description": "Designed and built a MapReduce pipeline that determines if Play Store apps are compatible with ChromeOS using Flume.\nMigrated a data pipeline that writes device compatibility tags for apps. Migrated a data pipeline that backfills classifier decisions for newly submitted apps into the database.\nProductionized the data pipelines using Borg.\nBuilt a prototype LSTM model to classify malicious apps using text metadata with TFX."
     },
     {
         "name": "Backend Engineering Intern (R&D)",
@@ -18,13 +25,6 @@
         "company": "Kronos Incorporated, Inc.",
         "date": ["May 2016", "Aug 2016"],
         "icon": "kronos.png",
-        "description": "Design, support, and maintain development on web-based technology solutions using AngularJS. Implement automation tests using Selenium and Protractor. Work closely with a team in agile system development life cycle."
-    },
-    {
-        "name": "Web Developer Intern",
-        "company": "Daohang Textile Technology, Inc.",
-        "date": ["June 2015", "Aug 2015"],
-        "icon": "daohang.jpeg",
-        "description": "Developed a second-handed item trading website for Chinese college campuses with Model-View-Controller model and PHP."
+        "description": "Design, support, and maintain development on web-based technology solutions using AngularJS.\n Implement automation tests using Selenium and Protractor. Work closely with a team in agile system development life cycle."
     }
 ]

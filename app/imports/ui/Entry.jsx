@@ -25,7 +25,7 @@ export default class Entry extends Component {
   renderDetailedImages(images) {
     const itemStyle = {
       display: 'inline-block',
-      margin: '3px',
+      margin: '4px',
       textAlign: 'right',
       backgroundColor: '#f3f3f3',
     };
@@ -55,8 +55,8 @@ export default class Entry extends Component {
         marginTop: 0, marginBottom: 0, marginRight: '5px',
       },
       links: {
-        marginTop: '10px',
-        marginBottom: '10px',
+        marginTop: '14px',
+        marginBottom: '16px',
         textAlign: 'center',
       },
       tools: {
@@ -97,7 +97,12 @@ export default class Entry extends Component {
         content = (
           <div className="box">
             <h3> {this.props.entry.name} </h3>
-            <div> {this.props.entry.description} </div>
+            <div> {this.props.entry.description.split('\n').map(item => (
+                <span>
+                  {item}
+                  <br />
+                </span>
+              ))} </div>
             {tools}
             <div style={style.links}>
               {code}
@@ -117,7 +122,12 @@ export default class Entry extends Component {
               </span>
               <h5> {statusRight} </h5>
             </div>
-            <div> {this.props.entry.description} </div>
+            <div> {this.props.entry.description.split('\n').map(item => (
+                <span>
+                  {item}
+                  <br />
+                </span>
+              ))} </div>
             {tools}
           </div>
         );
@@ -135,7 +145,12 @@ export default class Entry extends Component {
               </span>
               <h5 style={{ textAlign: 'right' }}> {dates} </h5>
             </div>
-            <div> {this.props.entry.description} </div>
+            <div> {this.props.entry.description.split('\n').map(item => (
+                <span>
+                  - {item}
+                  <br />
+                </span>
+              ))} </div>
             <img src={addr} alt="decorative" style={{ maxWidth: '75px', maxHeight: '100px', paddingLeft: '45%' }} />
           </div>
         );
