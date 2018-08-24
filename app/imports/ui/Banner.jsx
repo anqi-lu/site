@@ -38,7 +38,7 @@ export default class Banner extends Component {
           <span> </span>
           <a href={`https://drive.google.com/open?id=1EtgeLNsJfMnraMvu4XcVPUi87xy33_jG`} style={style.link} ><i className="fa fa-file-pdf-o" /></a>
           <span></span>
-          <a href={`https://unsplash.com/@alu213000`} style={style.link}><i id="px" className="fa fa-500px" /></a>        
+          <a href={`https://unsplash.com/@alu213000`} style={style.link}><i id="px" className="fa fa-camera-retro" /></a>        
         </span>
       </div>
     );
